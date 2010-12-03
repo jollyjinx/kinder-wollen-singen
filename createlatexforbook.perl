@@ -65,33 +65,25 @@ for my $filename (@lilypondfiles)
 
 	$filecontent	=~ s/#\(set-default-paper-size.*?\)//g;
 	$filecontent	=~ s/\\epsfile.*//g;
-	$filecontent	=~ s{\\(?:paper|layout)\s*\{(.*\})}{ 
-	
-		my $bigmatch = $1;
-		my $level = 1;
-		
-#		print STDERR __LINE__." Level: $level $filename ".substr($bigmatch,0,20)."...\n";
-		
-		do
-		{
-
-			if( $bigmatch =~ s/^[^\}]*\{(.*)$/$1/s )
-			{
-				$level++;
-#				print STDERR __LINE__." Level: $level $filename ".substr($bigmatch,0,20)."...\n";
-			}
-			if( $bigmatch =~ s/^[^\{]*\}(.*)$/$1/s ) 
-			{
-				$level--;
-#				print STDERR __LINE__." Level: $level $filename ".substr($bigmatch,0,20)."...\n";
-			}
-		}
-		while( ($level> 0) && ($bigmatch =~ m/[{}]+/s) );
-		
-#		print STDERR __LINE__." Level: $level $filename ".substr($bigmatch,0,20)."...\n";
-		$bigmatch;
-			    }gexs;		# remove paper and layout tags
-				
+	$filecontent	=~ s{\\(paper)\s*\{(.*\})}{	
+														my ($type,$bigmatch) = ($1,$2);
+														my $level = 1;
+														
+														do
+														{
+															if( $bigmatch =~ s/^[^\}]*\{(.*)$/$1/s )
+															{
+																$level++;
+															}
+															if( $bigmatch =~ s/^[^\{]*\}(.*)$/$1/s ) 
+															{
+																$level--;
+															}
+														}
+														while( ($level> 0) && ($bigmatch =~ m/[{}]+/s) );
+														
+														$bigmatch;
+												}gexs;		# remove paper and layout tags
 				
 				
 				
