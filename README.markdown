@@ -25,7 +25,7 @@ Requirements
 
 Usage
 -----
-Open Terminal and got this directory. Type 'createSongBooks.zsh' and after some time you should get a Weihnachtslieder.iPad.pdf in this directory.
+Open Terminal and go to this directory. Type 'createSongBooks.zsh' and after some time you should get a Weihnachtslieder.iPad.pdf in this directory.
 
 
 How it works
