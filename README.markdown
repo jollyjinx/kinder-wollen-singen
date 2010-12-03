@@ -43,7 +43,6 @@ ToDo
 * get LaTeX fixed ( paper margins )
 * get some Songs fixed ( ros ist entsprungen , adeste )
 * correct usage of utf8 everywhere. Currently I convert Umlauts to "u symbols
-* table of contents should be two rows 
 
 
 Bugs
