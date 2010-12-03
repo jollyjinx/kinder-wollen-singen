@@ -102,7 +102,7 @@ for my $filename (@lilypondfiles)
 {
 	my $lilypondtext		= undef;
 	
-	foreach my $filename (sort{ $contenthash{$a}{sorttitle} <=> $contenthash{$b}{sorttitle} }( keys %contenthash) )
+	foreach my $filename (sort{ $contenthash{$a}{sorttitle} cmp $contenthash{$b}{sorttitle} }( keys %contenthash) )
 	{
 		$lilypondtext		.= '\\addcontentsline{toc}{section}{'.$contenthash{$filename}{title}."}\n\\lilypondfile{".$filename."}\n\n\\pagebreak\n\n";
 	}
