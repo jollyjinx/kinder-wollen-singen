@@ -3,9 +3,9 @@ the part I've done is under the creative commons public domain license. http://c
 the book directory contains other cc licensed material I got from the musikpiraten website.
 
 
-This project creates songbooks from lilypond directories
-========================================================
-I've created the scripts in this directory to create a PDF automatically from the original Lilypond data files automatically.
+This project creates PDF songbooks from lilypond directories
+=============================================================
+I've created the scripts in this directory to create a PDF automatically from the original Lilypond data files.
 
 
 Background
