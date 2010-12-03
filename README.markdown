@@ -9,6 +9,7 @@ I've created the scripts in this directory to create a PDF automatically from th
 
 It creates files like [this pdf](http://www.jinx.de/Weihnachtslieder.ipad.cc.pdf)
 
+
 Background
 ----------
 
@@ -41,6 +42,11 @@ ToDo
 ----
 I've no real knowledge of LaTeX or LilyPond, I've just looked at the files. A few things are removed like paper sizes, eps inclusions.
 Somebody with TeX knowledge should look over the tex part and make it nicer looking.
+
+Bugs
+----
+Currently the lilypond process exits sometimes with fonts that are not found. That's why it currently will test not the exit status of lilypond book process.
+I call latex twice to get the tables of contents filled correctly - anybody has knowledge how to correct this ?
 
 
 
