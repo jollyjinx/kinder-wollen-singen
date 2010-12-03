@@ -40,8 +40,11 @@ Then pdflatex is called to create the final pdf.
 
 ToDo
 ----
-I've no real knowledge of LaTeX or LilyPond, I've just looked at the files. A few things are removed like paper sizes, eps inclusions.
-Somebody with TeX knowledge should look over the tex part and make it nicer looking.
+* get LaTeX fixed ( paper margins )
+* get some Songs fixed ( ros ist entsprungen , adeste )
+* correct usage of utf8 everywhere. Currently I convert Umlauts to "u symbols
+* table of contents should be two rows 
+
 
 Bugs
 ----
