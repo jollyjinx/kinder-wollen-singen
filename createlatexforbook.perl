@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 
 use strict;
+use POSIX;
 
 my($bookstylefile,$outputdirectory,$lilyponddirectory) = @ARGV;
 
@@ -104,6 +105,9 @@ for my $filename (@lilypondfiles)
 		
 	my $latexinput			= readcontentsfromfile($bookstylefile);	
 	$latexinput				=~ s/\\title\{(.*?\})/\\title\{$latextitleprefix $1/;
+	
+	my $gitversion			= createVersionString();
+	$latexinput				=~ s/VERSIONSTRINGWILLBEINSERTEDHERE/$gitversion/;
 	$latexinput				=~ s/LILYPONDFILESWILLBEINSERTEDHERE/$lilypondtext/;
 
 	print $latexinput;
@@ -201,4 +205,47 @@ sub convertforsortorder($)
 	$name =~ s/[^a-z\d]//gi;
 	
 	return lc $name;
+}
+
+
+sub createVersionString($)
+{
+	$ENV{PATH}.=':/usr/local/git/bin';
+
+
+	####
+	# create $commitrevision variable via GIT
+	####
+
+	my $commitrevision;		# something like '96b4e3e' in git
+	my $commitversion;	 	# something like '901415M' ( meaning 2009 = 9, 014 = day forteen of year, 15'th commit of that day, if a M is appended than the last diffs are not committed
+	my $commitdate;	 		# something like 
+	{
+		use Cwd;
+		my $currentdir = Cwd::getcwd();
+		
+		my $programdirectory = $0;
+		$programdirectory =~ s/[^\/]*$//;
+		
+		print STDERR "GIT Directory:". $programdirectory ."\n";
+
+		chdir($programdirectory);
+		{
+			my ($gitshortrevision,$gitseconds,$gitshortdate)	= split(/\s/, `git log -1 --pretty='format:%h %ct %cd' --date=short .` );
+
+			$gitshortdate .= 'T00:00:00';
+			my $gitcountofday	= `git log --since="$gitshortdate" --pretty=oneline . |wc -l`;
+			chomp $gitcountofday;
+
+			my $modifiedoutput 	= `git ls-files -t -m -d -o --exclude-standard`;
+			
+			$commitrevision 	= $gitshortrevision.($modifiedoutput !~ m/^\s*$/?'M':'');
+			$commitversion		= sprintf("%d%02d",POSIX::strftime("%g%j",localtime($gitseconds)),$gitcountofday).($modifiedoutput !~ m/^\s*$/?'M':'');
+			$commitdate			= POSIX::strftime("%+",localtime($gitseconds))
+		}
+
+		chdir($currentdir);
+	}
+	
+	return "Version:  $commitdate, $commitversion ($commitrevision)";
 }

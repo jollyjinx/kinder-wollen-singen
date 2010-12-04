@@ -7,7 +7,7 @@ This project creates PDF songbooks from lilypond directories
 =============================================================
 I've created the scripts in this directory to create a PDF automatically from the original Lilypond data files.
 
-It creates files like [this pdf](http://www.jinx.de/Weihnachtslieder.ipad.cc.pdf)
+It creates pdf files like this [Weihnachtslieder.pdf](http://www.jinx.de/Weihnachtslieder.ipad.cc.pdf)
 
 
 Background
@@ -41,7 +41,7 @@ Then pdflatex is called to create the final pdf.
 ToDo
 ----
 * get LaTeX fixed ( paper margins )
-* get some Songs fixed ( ros ist entsprungen , adeste )
+* get some Songs fixed ( ros ist entsprungen mehrstimming )
 * correct usage of utf8 everywhere. Currently I convert Umlauts to "u symbols
 
 
