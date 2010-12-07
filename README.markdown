@@ -8,6 +8,7 @@ This project creates PDF songbooks from lilypond directories
 I've created the scripts in this directory to create a PDF automatically from the original Lilypond data files.
 
 It creates pdf files like this Weihnachtslieder songbook:
+
 * [iPad Version.pdf](http://www.jinx.de/Weihnachtslieder.ipad.cc.pdf)
 * [A4 Version.pdf](http://www.jinx.de/Weihnachtslieder.a4.cc.pdf)
 
