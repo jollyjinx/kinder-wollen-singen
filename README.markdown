@@ -9,8 +9,8 @@ I've created the scripts in this directory to create a PDF automatically from th
 
 It creates pdf files like this Weihnachtslieder songbook:
 
-* [iPad Version.pdf](http://www.jinx.de/Weihnachtslieder.ipad.cc.pdf)
-* [A4 Version.pdf](http://www.jinx.de/Weihnachtslieder.a4.cc.pdf)
+- <a href="Weihnachtslieder.A4.pdf">A4 Version.pdf </a><br/>
+- <a href="Weihnachtslieder.iPad.pdf">iPad Version.pdf </a><br/>
 
 
 Background
