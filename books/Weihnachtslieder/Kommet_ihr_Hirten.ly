@@ -49,26 +49,26 @@ wdh = \lyricmode {
   >>
 }
 \markup {
-    \column {
-      \line {
-	\bold "2."
-        \column {
-          "Lasset uns sehen in Bethlehems Stall,"
-	  "was uns verheißen der himmlische Schall;"
-	  "was wir dort finden, lasset uns künden,"
-	  "lasset uns preisen in frommen Weisen."
-	  "Halleluja!"
-	}
-	\bold "3."
-        \column {
-          "Wahrlich, die Engel verkündigen heut"
-	  "Bethlehems Hirtenvolk gar große Freud:"
-	  "Nun soll es werden Friede auf Erden,"
-	  "den Menschen allen ein Wohlgefallen."
-	  "Ehre sei Gott!"
-        }
+  \column {
+    \line {
+      \bold "2."
+      \column {
+        "Lasset uns sehen in Bethlehems Stall,"
+        "was uns verheißen der himmlische Schall;"
+        "was wir dort finden, lasset uns künden,"
+        "lasset uns preisen in frommen Weisen."
+        "Halleluja!"
+      }
+      \bold "3."
+      \column {
+        "Wahrlich, die Engel verkündigen heut"
+        "Bethlehems Hirtenvolk gar große Freud:"
+        "Nun soll es werden Friede auf Erden,"
+        "den Menschen allen ein Wohlgefallen."
+        "Ehre sei Gott!"
       }
     }
+  }
 }
 
 \markuplines {

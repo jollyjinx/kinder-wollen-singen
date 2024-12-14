@@ -1,4 +1,4 @@
-% Dieses Notenblatt wurde erstellt von Peter Crighton [http://www.petercrighton.de] 
+% Dieses Notenblatt wurde erstellt von Peter Crighton [http://www.petercrighton.de]
 %
 % Kontakt: PeteCrighton@googlemail.com
 
@@ -48,59 +48,59 @@ wdh = \lyricmode {
 }
 
 \markup {
-    \hspace #0.1
-    \column {
-      \line {
-        \bold "2."
-        \column {
-          "Wie wird dann die Stube glänzen"
-          "von der großen Lichterzahl,"
-          "schöner als bei frohen Tänzen"
-          "ein geputzter Kronensaal!"
-          "Wisst ihr noch vom vorgen Jahr,"
-          "wie's am Weihnachtsabend war?"
-        }
-      }
-      \hspace #0.1
-      \line {
-        \bold "4."
-        \column {
-          "Wisst ihr noch den großen Wagen"
-          "und die schöne Jagd von Blei?"
-          "Unsre Kleiderchen zum Tragen"
-          "und die viele Näscherei?"
-          "Meinen fleißgen Sägemann"
-          "mit der Kugel unten dran?"
-        }
+  \hspace #0.1
+  \column {
+    \line {
+      \bold "2."
+      \column {
+        "Wie wird dann die Stube glänzen"
+        "von der großen Lichterzahl,"
+        "schöner als bei frohen Tänzen"
+        "ein geputzter Kronensaal!"
+        "Wisst ihr noch vom vorgen Jahr,"
+        "wie's am Weihnachtsabend war?"
       }
     }
     \hspace #0.1
-    \column {
-      \line {
-        \bold "3."
-        \column {
-          "Wisst ihr noch mein Reiterpferdchen,"
-          "Malchens nette Schäferin?"
-          "Jettchens Küche mit dem Herdchen"
-          "und dem blank geputzten Zinn?"
-          "Heinrichs bunten Harlekin"
-          "mit der gelben Violin?"
-        }
+    \line {
+      \bold "4."
+      \column {
+        "Wisst ihr noch den großen Wagen"
+        "und die schöne Jagd von Blei?"
+        "Unsre Kleiderchen zum Tragen"
+        "und die viele Näscherei?"
+        "Meinen fleißgen Sägemann"
+        "mit der Kugel unten dran?"
       }
-      \hspace #0.1
-      \line {
-        \bold "5."
-        \column {
-          "Welch ein schöner Tag ist morgen,"
-          "viele Freuden hoffen wir!"
-          "Unsre lieben Eltern sorgen"
-          "lange, lange schon dafür."
-          "O gewiss, wer sie nicht ehrt,"
-          "ist der ganzen Lust nicht wert!"
-        }
+    }
+  }
+  \hspace #0.1
+  \column {
+    \line {
+      \bold "3."
+      \column {
+        "Wisst ihr noch mein Reiterpferdchen,"
+        "Malchens nette Schäferin?"
+        "Jettchens Küche mit dem Herdchen"
+        "und dem blank geputzten Zinn?"
+        "Heinrichs bunten Harlekin"
+        "mit der gelben Violin?"
       }
     }
     \hspace #0.1
+    \line {
+      \bold "5."
+      \column {
+        "Welch ein schöner Tag ist morgen,"
+        "viele Freuden hoffen wir!"
+        "Unsre lieben Eltern sorgen"
+        "lange, lange schon dafür."
+        "O gewiss, wer sie nicht ehrt,"
+        "ist der ganzen Lust nicht wert!"
+      }
+    }
+  }
+  \hspace #0.1
 }
 
 \markuplines {

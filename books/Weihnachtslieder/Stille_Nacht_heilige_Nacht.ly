@@ -42,26 +42,26 @@ text = \lyricmode {
   >>
 }
 \markup {
-    \column {
-      \line {
-	\bold "2."
-        \column {
-          "Stille Nacht, heilige Nacht!"
-	  "Gottes Sohn, o wie lacht"
-	  "Lieb aus deinem göttlichen Mund"
-	  "Da uns schlägt die rettende Stund,"
-	  "Christ, in deiner Geburt,"
-	  "Christ, in deiner Geburt."
-	}
-	\bold "3."
-        \column {
-	  "Stille Nacht, heilige Nacht!"
-	  "Hirten erst kundgemacht,"
-	  "Durch der Engel Halleluja."
-	  "Tönt es laut von fern und nah:"
-	  "Christ, der Retter ist da,"
-	  "Christ, der Retter ist da."
-        }
+  \column {
+    \line {
+      \bold "2."
+      \column {
+        "Stille Nacht, heilige Nacht!"
+        "Gottes Sohn, o wie lacht"
+        "Lieb aus deinem göttlichen Mund"
+        "Da uns schlägt die rettende Stund,"
+        "Christ, in deiner Geburt,"
+        "Christ, in deiner Geburt."
+      }
+      \bold "3."
+      \column {
+        "Stille Nacht, heilige Nacht!"
+        "Hirten erst kundgemacht,"
+        "Durch der Engel Halleluja."
+        "Tönt es laut von fern und nah:"
+        "Christ, der Retter ist da,"
+        "Christ, der Retter ist da."
+      }
     }
   }
 }

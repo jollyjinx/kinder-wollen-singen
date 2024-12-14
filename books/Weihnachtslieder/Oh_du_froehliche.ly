@@ -1,4 +1,4 @@
-% Dieses Notenblatt wurde erstellt von Peter Crighton [http://www.petercrighton.de] 
+% Dieses Notenblatt wurde erstellt von Peter Crighton [http://www.petercrighton.de]
 %
 % Kontakt: PeteCrighton@googlemail.com
 
@@ -43,23 +43,23 @@ text = \lyricmode {
   >>
 }
 \markup {
-    \column {
-      \line {
-	\bold "2."
-        \column {
-          "Oh du fröhliche, oh du selige,"
-	  "gnadenbringende Weihnachtszeit!"
-	  "Christ ist erschienen, uns zu versühnen:"
-	  "Freue, freue dich, oh Christenheit!"
-	}
-	\bold "3."
-        \column {
-          "Oh du fröhliche, oh du selige,"
-	  "gnadenbringende Weihnachtszeit!"
-	  "Himmlische Heere jauchzen dir Ehre:"
-	  "Freue, freue dich, oh Christenheit!"
-        }
+  \column {
+    \line {
+      \bold "2."
+      \column {
+        "Oh du fröhliche, oh du selige,"
+        "gnadenbringende Weihnachtszeit!"
+        "Christ ist erschienen, uns zu versühnen:"
+        "Freue, freue dich, oh Christenheit!"
       }
+      \bold "3."
+      \column {
+        "Oh du fröhliche, oh du selige,"
+        "gnadenbringende Weihnachtszeit!"
+        "Himmlische Heere jauchzen dir Ehre:"
+        "Freue, freue dich, oh Christenheit!"
+      }
+    }
   }
 }
 

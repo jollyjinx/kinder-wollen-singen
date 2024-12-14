@@ -38,22 +38,22 @@ text = \lyricmode {
   >>
 }
 \markup {
-    \column {
-      \line {
-	\bold "2."
-        \column {
-          "In den Herzen ist's warm,"
-	  "still schweigt Kummer und Harm,"
-	  "Sorge des Lebens verhallt:"
-	  "Freue dich, Christkind kommt bald!"
-	}
-	\bold "3."
-        \column {
-	  "Bald ist heilige Nacht;"
-	  "Chor der Engel erwacht;"
-	  "Horch nur, wie lieblich es schallt:"
-	  "Freue dich, Christkind kommt bald!"
-        }
+  \column {
+    \line {
+      \bold "2."
+      \column {
+        "In den Herzen ist's warm,"
+        "still schweigt Kummer und Harm,"
+        "Sorge des Lebens verhallt:"
+        "Freue dich, Christkind kommt bald!"
+      }
+      \bold "3."
+      \column {
+        "Bald ist heilige Nacht;"
+        "Chor der Engel erwacht;"
+        "Horch nur, wie lieblich es schallt:"
+        "Freue dich, Christkind kommt bald!"
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-% Dieses Notenblatt wurde erstellt von Peter Crighton [http://www.petercrighton.de] 
+% Dieses Notenblatt wurde erstellt von Peter Crighton [http://www.petercrighton.de]
 %
 % Kontakt: PeteCrighton@googlemail.com
 
@@ -58,17 +58,17 @@ text = \lyricmode {
     \hspace #0.1
     \column {
       \line {
-	\bold "2."
+        \bold "2."
         \column {
           "Er ist gerecht, ein Helfer wert;"
-	  "Sanftmütigkeit ist sein Gefährt,"
-	  "sein Königskron ist Heiligkeit,"
-	  "sein Zepter ist Barmherzigkeit;"
-	  "all unsre Not zum End er bringt,"
-	  "derhalben jauchzt, mit Freuden singt:"
-	  "Gelobet sei mein Gott,"
-	  "mein Heiland groß von Tat."
-	}
+          "Sanftmütigkeit ist sein Gefährt,"
+          "sein Königskron ist Heiligkeit,"
+          "sein Zepter ist Barmherzigkeit;"
+          "all unsre Not zum End er bringt,"
+          "derhalben jauchzt, mit Freuden singt:"
+          "Gelobet sei mein Gott,"
+          "mein Heiland groß von Tat."
+        }
       }
       \hspace #0.1
       \line {
@@ -105,13 +105,13 @@ text = \lyricmode {
         \bold "5."
         \column {
           "Komm, o mein Heiland Jesu Christ,"
-	  "meins Herzens Tür dir offen ist."
-	  "Ach zieh mit deiner Gnade ein;"
-	  "dein Freundlichkeit auch uns erschein."
-	  "Dein Heilger Geist uns führ und leit"
-	  "den Weg zur ewgen Seligkeit."
-	  "Dem Namen dein, o Herr,"
-	  "sei ewig Preis und Ehr."
+          "meins Herzens Tür dir offen ist."
+          "Ach zieh mit deiner Gnade ein;"
+          "dein Freundlichkeit auch uns erschein."
+          "Dein Heilger Geist uns führ und leit"
+          "den Weg zur ewgen Seligkeit."
+          "Dem Namen dein, o Herr,"
+          "sei ewig Preis und Ehr."
         }
       }
     }
