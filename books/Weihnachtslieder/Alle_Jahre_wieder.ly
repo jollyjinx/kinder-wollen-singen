@@ -1,10 +1,12 @@
 \include "deutsch.ly"
-\version "2.12.3"
+\version "2.24.2"
 
 \header{
   title = "Alle Jahre wieder"
   poet = "Text: Wilhelm Hey (1789–1854)"
   composer = "Musik: Friedrich Silcher (1789–1860)"
+  arranger = "Satz: Sebastian Werk"
+  copyright = "Public Domain"
 }
 
 AlleJahreWiederXaGlobal = {
@@ -86,13 +88,3 @@ AlleJahreWiederXaStrophen =
 
 \score{\AlleJahreWiederXa} \AlleJahreWiederXaStrophen
 
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt von Sebastian Werk
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
-      }
-    }
-  }
-}
