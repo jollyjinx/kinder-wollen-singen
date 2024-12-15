@@ -2,11 +2,13 @@
 %
 % Kontakt: PeteCrighton@googlemail.com
 
-\version "2.12.3"
+\version "2.24.2"
 \header {
   title = "Stille Nacht, heilige Nacht"
   poet = "Text: Joseph Mohr (1816)"
   composer = "Melodie: Franz Xaver Gruber (1818)"
+  arranger = "Peter Crighton"
+  copyright = "Public Domain"
 }
 \layout {
   indent = #0
@@ -61,17 +63,6 @@ text = \lyricmode {
         "Tönt es laut von fern und nah:"
         "Christ, der Retter ist da,"
         "Christ, der Retter ist da."
-      }
-    }
-  }
-}
-
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt von Peter Crighton
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
       }
     }
   }
