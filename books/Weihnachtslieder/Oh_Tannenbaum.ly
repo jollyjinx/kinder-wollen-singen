@@ -1,10 +1,12 @@
 % Created on Mon Nov 15 16:37:41 CET 2010
-\version "2.12.3"
+\version "2.24.2"
 
 \header {
   title = "Oh Tannenbaum!"
   poet = "Text: J. A. Zarnack (1777–1827), E. Anschütz (1780–1861)"
   composer =  "Musik: Volksweise"
+  arranger = "David Herrmann"
+  copyright = "Public Domain"
 }
 
 \include "deutsch.ly"
@@ -143,9 +145,6 @@ harmonies = \new ChordNames \chordmode {
     \staffPiano
   >>
 
-  \midi {
-  }
-
   \layout {
   }
 }
@@ -153,14 +152,3 @@ harmonies = \new ChordNames \chordmode {
 \paper {
 }
 
-
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt von David Herrmann
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
-      }
-    }
-  }
-}
