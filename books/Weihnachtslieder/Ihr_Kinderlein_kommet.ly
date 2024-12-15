@@ -2,11 +2,13 @@
 %
 % Kontakt: PeteCrighton@googlemail.com
 
-\version "2.12.3"
+\version "2.24.2"
 \header {
   title = "Ihr Kinderlein, kommet"
   poet = "Text: Christoph von Schmid (1798)"
   composer = "Melodie: Johann Abraham Peter Schulz (1794)"
+  arranger = "Satz: Peter Crighton"
+  copyright = "Public Domain"
 }
 \layout {
   indent = #0
@@ -97,17 +99,6 @@ wdh = \lyricmode {
         "wir geben sie gerne mit fröhlichem Sinn."
         "Ach mache sie heilig und selig wie deins"
         "und mach sie auf ewig mit deinem nur eins."
-      }
-    }
-  }
-}
-
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt von Peter Crighton
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
       }
     }
   }
