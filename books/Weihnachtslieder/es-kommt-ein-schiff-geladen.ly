@@ -3,7 +3,7 @@
 %          Mittwoch, 17. November 2010
 %=============================================
 
-\version "2.12.0"
+\version "2.24.2"
 
 
 
@@ -26,7 +26,9 @@
 \header {
   title = "Es kommt ein Schiff geladen"
   composer = "Traditionell"
-  poet = "Johannes Tauler (1300 - 1361) und Daniel Sudermann (1550 - 1631) "
+  poet = "Johannes Tauler (1300 - 1361) und Daniel Sudermann (1550 - 1631)"
+  copyright = "Public Domain"
+  arranger = "Gesetzt für kinder-wollen-singen.de"
 }
 
 AvoiceAA = \relative c'{
@@ -154,14 +156,4 @@ theChords = \chordmode {
   \hspace #0.1
 }
 
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt für http://www.kinder-wollen-singen.de
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
-      }
-    }
-  }
-}
 #(set-global-staff-size 20)
