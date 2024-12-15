@@ -1,12 +1,13 @@
-
+\version "2.24.2"
 
 \header {
   title = "Schneeflöckchen"
   composer = "W. A. Mozart"
   poet = "Hedwig Haberkern"
+  arranger = "Gesetzt für kinder-wollen-singen.de"
+  copyright = "Public Domain"
 }
 
-\version "2.12.3"
 
 \layout {
   indent = #0
@@ -48,9 +49,6 @@ harmonies = \chordmode {
   >>
 
   \layout{ }
-  \midi { }
-
-
 }
 
 \markup {
@@ -87,14 +85,3 @@ harmonies = \chordmode {
   % kann entfernt werden, wenn wenig Platz auf der Seite ist
 }
 
-
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt für http://www.kinder-wollen-singen.de
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
-      }
-    }
-  }
-}
