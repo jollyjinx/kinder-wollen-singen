@@ -1,4 +1,4 @@
-\version "2.12.2"
+\version "2.24.2"
 
 
 \layout {
@@ -9,6 +9,8 @@
 {
   opus = "Deutsches Volkslied (um 1800)"
   title = "Still, Still, Still"
+  arranger = "Richard Zillmann (notenschleuder.de)"
+  copyright = "Public Domain"
 } %%header
 \score
 {
@@ -79,15 +81,4 @@
     }
   }
   \hspace #0.1
-}
-
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt von Richard Zillmann (http://www.notenschleuder.de)
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
-      }
-    }
-  }
 }
