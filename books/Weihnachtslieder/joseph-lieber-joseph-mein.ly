@@ -3,9 +3,7 @@
 %          Donnerstag, 18. November 2010
 %=============================================
 
-\version "2.12.0"
-
-
+\version "2.24.0"
 
 #(set-default-paper-size "a4")
 
@@ -27,12 +25,14 @@
   title = "Joseph, lieber Joseph mein"
   composer = "Traditionell"
   poet = "Traditionell"
+  arranger = "Gesetzt für kinder-wollen-singen.de"
+  copyright = "Public Domain"
 }
 
 
 AvoiceAA = \relative c'{
-  \set Staff.instrumentName = #""
-  \set Staff.shortInstrumentName = #""
+  \set Staff.instrumentName = ""
+  \set Staff.shortInstrumentName = ""
   \clef treble
   %staffkeysig
   \key f \major
@@ -69,29 +69,29 @@ theChords = \chordmode { f1 bes8 f1*11/8 bes8 f4. bes1. f2. c4. c:7 f2 }
 
     \set Score.skipBars = ##t
     %%\set Score.melismaBusyProperties = #'()
-    \override Score.BarNumber #'break-visibility = #end-of-line-invisible %%every bar is numbered.!!!
+    \override Score.BarNumber.break-visibility = #end-of-line-invisible %%every bar is numbered.!!!
     %% remove previous line to get barnumbers only at beginning of system.
     #(set-accidental-style 'modern-cautionary)
     \set Score.markFormatter = #format-mark-box-letters %%boxed rehearsal-marks
-    \override Score.TimeSignature #'style = #'() %%makes timesigs always numerical
+    \override Score.TimeSignature.style = #'() %%makes timesigs always numerical
     %% remove previous line to get cut-time/alla breve or common time
     \set Score.pedalSustainStyle = #'mixed
-    %% make spanners comprise the note it end on, so that there is no doubt that this note is included.
-    \override Score.TrillSpanner #'(bound-details right padding) = #-2
-    \override Score.TextSpanner #'(bound-details right padding) = #-1
-    %% Lilypond's normal textspanners are too weak:
-    \override Score.TextSpanner #'dash-period = #1
-    \override Score.TextSpanner #'dash-fraction = #0.5
+    %% make spanners comprise the note it ends on, so that there is no doubt that this note is included.
+    \override Score.TrillSpanner.bound-details.right.padding = #-2
+    \override Score.TextSpanner.bound-details.right.padding = #-1
+    %% LilyPond's normal textspanners are too weak:
+    \override Score.TextSpanner.dash-period = #1
+    \override Score.TextSpanner.dash-fraction = #0.5
     %% lilypond chordname font, like mscore jazzfont, is both far too big and extremely ugly (olagunde@start.no):
-    \override Score.ChordName #'font-family = #'roman
-    \override Score.ChordName #'font-size =#0
+    \override Score.ChordName.font-family = #'roman
+    \override Score.ChordName.font-size = #0
     %% In my experience the normal thing in printed scores is maj7 and not the triangle. (olagunde):
     \set Score.majorSevenSymbol = \markup {maj7}
   >>
 
   %% Boosey and Hawkes, and Peters, have barlines spanning all staff-groups in a score,
-  %% Eulenburg and Philharmonia, like Lilypond, have no barlines between staffgroups.
-  %% If you want the Eulenburg/Lilypond style, comment out the following line:
+  %% Eulenburg and Philharmonia, like LilyPond, have no barlines between staffgroups.
+  %% If you want the Eulenburg/LilyPond style, comment out the following line:
   \layout {\context {\Score \consists Span_bar_engraver}}
 }%% end of score-block
 
@@ -146,14 +146,4 @@ theChords = \chordmode { f1 bes8 f1*11/8 bes8 f4. bes1. f2. c4. c:7 f2 }
   }
 }
 
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt für http://www.kinder-wollen-singen.de
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
-      }
-    }
-  }
-}
 #(set-global-staff-size 20)
