@@ -1,13 +1,11 @@
-%{
-
-
-
-%}
+\version "2.24.2"
 
 \header{
   title = "Morgen kommt der Weihnachtsmann"
   poet = "Hoffmann von Fallersleben (1798 bis 1874)"
   composer = "Volksweise"
+  arranger = "Satz: Beate Paland"
+  copyright = "Public Domain"
 }
 
 \layout { indent = #0 }
@@ -60,15 +58,4 @@
     War -- ten dein mit Schmer -- zen.
   }
 >>
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt von Beate Paland
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
-      }
-    }
-  }
-}
-\version "2.12.3"  % necessary for upgrading to future LilyPond versions.
 
