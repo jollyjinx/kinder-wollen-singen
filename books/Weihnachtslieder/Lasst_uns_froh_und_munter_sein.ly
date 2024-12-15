@@ -1,11 +1,12 @@
 % Created on Mon Nov 15 16:37:41 CET 2010
-\version "2.12.3"
+\version "2.24.2"
 
 \header {
   title = "Lasst uns froh und munter sein"
   poet = "Text: Aus dem Hunsrück (19. Jh.), Autor unbekannt"
   composer =  "Musik: unbekannter Komponist"
-
+  arranger = "David Herrmann"
+  copyright = "Public Domain"
 }
 
 \include "deutsch.ly"
@@ -69,9 +70,6 @@ harmonies = \new ChordNames \chordmode {
 
   >>
 
-  \midi {
-  }
-
   \layout {
   }
 }
@@ -118,17 +116,5 @@ harmonies = \new ChordNames \chordmode {
       }
     }
     \hspace #0.1
-  }
-}
-
-
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt von David Herrmann
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
-      }
-    }
   }
 }
