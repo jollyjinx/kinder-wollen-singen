@@ -2,11 +2,13 @@
 %
 % Kontakt: PeteCrighton@googlemail.com
 
-\version "2.12.3"
+\version "2.24.2"
 \header {
   title = "Oh du fröhliche"
   poet = \markup { \column { "Text: " } \column { "Str. 1 Johannes Daniel Falk (1816)""Str. 2 & 3 Heinrich Holzschuher (1829)" } }
   composer = "Melodie: Sizilien (vor 1788)"
+  arranger = "Peter Crighton"
+  copyright = "Public Domain"
 }
 \layout {
   indent = #0
@@ -58,17 +60,6 @@ text = \lyricmode {
         "gnadenbringende Weihnachtszeit!"
         "Himmlische Heere jauchzen dir Ehre:"
         "Freue, freue dich, oh Christenheit!"
-      }
-    }
-  }
-}
-
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt von Peter Crighton
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
       }
     }
   }
