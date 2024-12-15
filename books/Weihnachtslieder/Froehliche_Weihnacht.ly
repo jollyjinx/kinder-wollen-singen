@@ -1,8 +1,4 @@
-%{
-
-Gesetzt von Beate Paland
-
-%}
+\version "2.24.2"
 
 \layout {
   indent = #0
@@ -12,6 +8,8 @@ Gesetzt von Beate Paland
   title = "Fröhliche Weihnacht überall"
   poet = "A. H. Hoffmann von Fallersleben, 1798 bis 1874"
   composer = "Aus England, 19. Jh."
+  arranger = "Satz: Beate Paland"
+  copyright = "Public Domain"
 }
 
 <<
@@ -85,15 +83,3 @@ Gesetzt von Beate Paland
   }
 >>
 
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt von Beate Paland
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
-      }
-
-    }
-  }
-}
-\version "2.12.3"  % necessary for upgrading to future LilyPond versions.
