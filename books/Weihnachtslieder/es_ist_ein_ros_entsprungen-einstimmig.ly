@@ -1,10 +1,12 @@
-\version "2.12.3"
+\version "2.24.2"
 
 
 \header {
   title = "Es ist ein Ros entsprungen"
   composer = "volkstümlich"
   poet = "volkstümlich / Michael Praetorius / Friedrich Layriz"
+  arranger = "Satz: Christian Schramm"
+  copyright = "Public Domain"
 }
 
 \layout {
@@ -90,12 +92,6 @@ verseOne = \lyricmode {
     \addlyrics { \verseOne }
   >>
   \layout { }
-  \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 100 4)
-    }
-  }
 }
 
 \markup {
@@ -128,13 +124,3 @@ verseOne = \lyricmode {
   }
 }
 
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt von Christian Schramm
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
-      }
-    }
-  }
-}
