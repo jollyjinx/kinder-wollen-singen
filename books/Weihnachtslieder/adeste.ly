@@ -1,4 +1,4 @@
-\version "2.12.3"
+\version "2.24.2"
 \header {
   mutopiatitle = "Adeste Fideles"
   mutopiacomposer = "J. F. Wade"
@@ -7,7 +7,6 @@
   date = "18th century"
   source = "Cantus Diversi, 1751"
   style = "Classical"
-
   maintainer = "Matt Corks, David Herrmann"
   maintainerEmail = "mvcorks@alumni.uwaterloo.ca"
   lastupdated = "2011/Nov/17"
@@ -20,6 +19,7 @@
   }
   composer = "John Francis Wade (1711 - 1786)"
   tagline = ##f
+  copyright = "Public Domain"
 }
 
 upper =
@@ -27,7 +27,7 @@ upper =
   \slurDown
   \clef "treble"
   \key a\major
-  \override Staff.TimeSignature   #'style = #'numbered
+  \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   \partial 4
   <e a>4
@@ -65,7 +65,7 @@ lower =
 \relative c {
   \clef "bass"
   \key a\major
-  \override Staff.TimeSignature   #'style = #'numbered
+  \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   \partial 4
   <a cis'>4
@@ -133,14 +133,6 @@ verbadeut = \context Lyrics = "verbadeut" \lyricmode {
     }
     \context{
       \Staff
-    }
-  }
-
-
-  \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 120 4)
     }
   }
 }
@@ -216,14 +208,11 @@ verbadeut = \context Lyrics = "verbadeut" \lyricmode {
   }
 }
 
-\markuplines {
+\markup {
   \italic {
     \column {
-      "Der Notensatz basiert auf dem von Matt Cocks auf Mutopia als gemeinfrei veröffentlichten Satz,"
-      "verändert und um den deutschen Text erweitert von David Herrmann. Als gemeinfrei freigegeben."
+      \line{"Der Notensatz basiert auf dem von Matt Cocks auf Mutopia als gemeinfrei veröffentlichten Satz,"}
+      \line{"verändert und um den deutschen Text erweitert von David Herrmann. Als gemeinfrei freigegeben."}
     }
-  }
-  \general-align #Y #DOWN {
-    \epsfile #X #3 #"publicdomain.eps"
   }
 }
