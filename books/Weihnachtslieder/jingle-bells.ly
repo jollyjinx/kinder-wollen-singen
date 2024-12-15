@@ -3,9 +3,7 @@
 %          Montag, 29. November 2010
 %=============================================
 
-\version "2.12.0"
-
-
+\version "2.24.2"
 
 #(set-default-paper-size "a4")
 
@@ -27,8 +25,8 @@
   title = "Jingle Bells"
   subtitle = "Or the one horse open sleigh"
   composer = "James Pierpont"
+  arranger = "Gesetzt für kinder-wollen-singen.de"
 }
-
 
 AvoiceAA = \relative c'{
   \set Staff.instrumentName = #""
@@ -84,26 +82,24 @@ ApartAverseA = \lyricmode { \set stanza = " 1. " Dash -- ing  through the snow, 
 
     \context Lyrics = ApartAverseA\lyricsto AvoiceAA  \ApartAverseA
 
-
-
     \set Score.skipBars = ##t
     %%\set Score.melismaBusyProperties = #'()
-    \override Score.BarNumber #'break-visibility = #end-of-line-invisible %%every bar is numbered.!!!
+    \override Score.BarNumber.break-visibility = #end-of-line-invisible %%every bar is numbered.!!!
     %% remove previous line to get barnumbers only at beginning of system.
     #(set-accidental-style 'modern-cautionary)
     \set Score.markFormatter = #format-mark-box-letters %%boxed rehearsal-marks
-    \override Score.TimeSignature #'style = #'() %%makes timesigs always numerical
+    \override Score.TimeSignature.style = #'() %%makes timesigs always numerical
     %% remove previous line to get cut-time/alla breve or common time
     \set Score.pedalSustainStyle = #'mixed
     %% make spanners comprise the note it end on, so that there is no doubt that this note is included.
-    \override Score.TrillSpanner #'(bound-details right padding) = #-2
-    \override Score.TextSpanner #'(bound-details right padding) = #-1
+    \override Score.TrillSpanner.bound-details.right.padding = #-2
+    \override Score.TextSpanner.bound-details.right.padding = #-1
     %% Lilypond's normal textspanners are too weak:
-    \override Score.TextSpanner #'dash-period = #1
-    \override Score.TextSpanner #'dash-fraction = #0.5
+    \override Score.TextSpanner.dash-period = #1
+    \override Score.TextSpanner.dash-fraction = #0.5
     %% lilypond chordname font, like mscore jazzfont, is both far too big and extremely ugly (olagunde@start.no):
-    \override Score.ChordName #'font-family = #'roman
-    \override Score.ChordName #'font-size =#0
+    \override Score.ChordName.font-family = #'roman
+    \override Score.ChordName.font-size = #0
     %% In my experience the normal thing in printed scores is maj7 and not the triangle. (olagunde):
     \set Score.majorSevenSymbol = \markup {maj7}
   >>
@@ -156,15 +152,3 @@ ApartAverseA = \lyricmode { \set stanza = " 1. " Dash -- ing  through the snow, 
 }
 
 #(set-global-staff-size 20)
-
-
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt für http://www.kinder-wollen-singen.de
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
-      }
-    }
-  }
-}
