@@ -1,13 +1,11 @@
-%{
-
-Gesetzt von Beate Paland
-
-%}
+\version "2.24.2"
 
 \header{
   title = "Kling, Glöckchen, klingelingeling"
   poet = "Karl Enslin oder Benedikt Widmann"
   composer = "Volksweise"
+  arranger = "Satz: Beate Paland"
+  copyright = "Public Domain"
 }
 \layout {
   indent = #0
@@ -77,14 +75,3 @@ Gesetzt von Beate Paland
     }
   >>
 }
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt von Beate Paland
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
-      }
-    }
-  }
-}
-\version "2.12.3"  % necessary for upgrading to future LilyPond versions.
