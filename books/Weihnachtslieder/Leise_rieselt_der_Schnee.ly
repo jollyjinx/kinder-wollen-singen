@@ -2,11 +2,13 @@
 %
 % Kontakt: PeteCrighton@googlemail.com
 
-\version "2.12.3"
+\version "2.24.2"
 \header {
   title = "Leise rieselt der Schnee"
   poet = "Text: Eduard Ebel (1895)"
   composer = "Melodie: Eduard Ebel (um 1900)"
+  arranger = "Peter Crighton"
+  copyright = "Public Domain"
 }
 \layout {
   indent = #0
@@ -53,17 +55,6 @@ text = \lyricmode {
         "Chor der Engel erwacht;"
         "Horch nur, wie lieblich es schallt:"
         "Freue dich, Christkind kommt bald!"
-      }
-    }
-  }
-}
-
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt von Peter Crighton
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
       }
     }
   }
