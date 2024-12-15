@@ -1,4 +1,4 @@
-\version "2.12.3"
+\version "2.24.2"
 \header {
   mutopiatitle = "Der Christbaum ist der schönste Baum"
   mutopiacomposer = ""
@@ -13,7 +13,9 @@
   title = "Der Christbaum ist der schönste Baum"
   poet = "Norddeutsches Volkslied"
   composer = "Volksweise"
+  arranger = "Satz: David Herrmann, basierend auf „Das Buch der Weihnachtslieder“, 1896"
   footer = ""
+  copyright = "Public Domain"
 }
 
 \layout {
@@ -38,7 +40,7 @@ upper =
   \slurDown
   \clef "treble"
   \key g\major
-  \override Staff.TimeSignature   #'style = #'numbered
+  \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   \partial 4
   << {d4} \\ {d4}>>
@@ -64,7 +66,7 @@ lower =
 \relative c {
   \clef "bass"
   \key g\major
-  \override Staff.TimeSignature   #'style = #'numbered
+  \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   \partial 4
   << {h'4} \\ {g} >>
@@ -100,14 +102,6 @@ lower =
     }
     \context{
       \Staff
-    }
-  }
-
-
-  \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 120 4)
     }
   }
 }
@@ -157,15 +151,4 @@ lower =
 
 
 \paper {
-}
-
-
-\markuplines {
-  \italic {
-    "Der Notensatz basiert auf dem Satz aus „Das Buch der Weihnachtslieder“, 1896."
-    "Von David Herrmann in Lilypond gesetzt."
-  }
-  \general-align #Y #DOWN {
-    \epsfile #X #3 #"publicdomain.eps"
-  }
 }
