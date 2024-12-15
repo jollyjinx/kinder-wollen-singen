@@ -1,4 +1,4 @@
-\version "2.12.3"
+\version "2.24.2"
 \header {
   mutopiatitle = "Ich lag und schlief, da träumte mir"
   mutopiacomposer = ""
@@ -13,7 +13,8 @@
   title = "Ich lag und schlief, da träumte mir"
   poet = "Hoffmann von Fallersleben (1798-1872)"
   composer = "Volksweise"
-
+  copyright = "Public Domain"
+  arranger = "David Herrmann (basierend auf „Das Buch der Weihnachtslieder“, 1896)"
   tagline = \markup{
     \column{}
   }
@@ -39,8 +40,8 @@ upper =
 \relative c' {
   \slurDown
   \clef "treble"
-  \key d\major
-  \override Staff.TimeSignature   #'style = #'numbered
+  \key d \major
+  \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   \partial 4
   << {d8 fis8} \\ {d4} >>
@@ -59,8 +60,8 @@ upper =
 lower =
 \relative c {
   \clef "bass"
-  \key d\major
-  \override Staff.TimeSignature   #'style = #'numbered
+  \key d \major
+  \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   \partial 4
 
@@ -92,14 +93,6 @@ lower =
     }
     \context{
       \Staff
-    }
-  }
-
-
-  \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 120 4)
     }
   }
 }
@@ -173,17 +166,4 @@ lower =
 
 
 \paper {
-}
-
-
-\markuplines {
-  \italic {
-    \column {
-      "Der Notensatz basiert auf dem Satz aus „Das Buch der Weihnachtslieder“, 1896."
-      "Von David Herrmann in Lilypond gesetzt."
-    }
-  }
-  \general-align #Y #DOWN {
-    \epsfile #X #3 #"publicdomain.eps"
-  }
 }
