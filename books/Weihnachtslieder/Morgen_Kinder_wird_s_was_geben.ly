@@ -7,6 +7,8 @@
   title = "Morgen, Kinder, wird's was geben"
   poet = "Text: Martin Friedrich Philipp Bartsch (1795)"
   composer = "Melodie: Carl Gottlieb Hering (1809)"
+  arranger = "Peter Crighton"
+  copyright = "Public Domain"
 }
 \layout {
   indent = #0
@@ -19,7 +21,7 @@ melodie = \relative c' {
   \clef "treble"
   \time 4/4
   \key g\major
-  #(override-auto-beam-setting '(end * * * *) 2 4)
+  \autoBeamOff
   \repeat volta 2 {
     g'4 d e d | e8( g) fis( a) g4 d |
     b' b8( c) d4 b | c b a2 |
@@ -101,15 +103,4 @@ wdh = \lyricmode {
     }
   }
   \hspace #0.1
-}
-
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt von Peter Crighton
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
-      }
-    }
-  }
 }
