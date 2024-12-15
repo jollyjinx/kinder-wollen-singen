@@ -1,9 +1,11 @@
-\version "2.12.3"
+\version "2.24.2"
 
 \header {
   title = "Es wird scho glei dumpa"
   composer = "Franz Friedrich Kohl und Josef Reiter"
   poet = "Anton Reidinger"
+  arranger = "Satz: Martin Thoma (thoma-stammler.at)"
+  copyright = "Public Domain"
 }
 
 \layout {
@@ -84,13 +86,3 @@
   }
 >>
 
-\markuplines {
-  \italic {
-    \line {
-      Gesetzt von Martin Thoma (http://www.thoma-stammler.at)
-      \general-align #Y #DOWN {
-        \epsfile #X #3 #"publicdomain.eps"
-      }
-    }
-  }
-}
