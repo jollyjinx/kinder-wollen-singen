@@ -1,5 +1,5 @@
 author: patrick stein
-the part I've done is under the creative commons public domain license. http://creativecommons.org/publicdomain/zero/1.0/deed.de
+the part I've done is under the [creative commons public domain license](http://creativecommons.org/publicdomain/zero/1.0/deed.de)
 the book directory contains other cc licensed material I got from the musikpiraten website.
 
 
