@@ -20,6 +20,7 @@
   composer = "John Francis Wade (1711 - 1786)"
   tagline = ##f
   copyright = "Public Domain"
+  arranger = "Satz: David Herrmann, basierend auf Matt Cocks"
 }
 
 upper =
@@ -205,14 +206,5 @@ verbadeut = \context Lyrics = "verbadeut" \lyricmode {
       }
     }
     \hspace #0.1
-  }
-}
-
-\markup {
-  \italic {
-    \column {
-      \line{"Der Notensatz basiert auf dem von Matt Cocks auf Mutopia als gemeinfrei veröffentlichten Satz,"}
-      \line{"verändert und um den deutschen Text erweitert von David Herrmann. Als gemeinfrei freigegeben."}
-    }
   }
 }
