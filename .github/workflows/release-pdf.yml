@@ -43,7 +43,7 @@ jobs:
           echo "::set-output name=matrix::$( echo "$JSON" )"
 
   build_scores:
-    name: Compile with Lilypond and Upload PDF
+    name: Compile with Lilypond and Upload PDF Artifacts
     runs-on: ubuntu-latest
     needs: [ directories ]
     strategy:
@@ -68,10 +68,17 @@ jobs:
         run: |
           echo "Listing files in ${{matrix.directory}}:"
           ls -R ${{matrix.directory}}
+      - name: Extract last part of the path
+        id: extract_name
+        run: |
+          # Extract the last part of the directory path
+          # because "/" slashes are invalid in artifact names
+          DIR_NAME=$(basename "${{ matrix.directory }}")
+          echo "DIR_NAME=${DIR_NAME}" >> $GITHUB_ENV
       - name: Upload PDF Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: "${{matrix.directory}} Scores"
+          name: "${{ env.DIR_NAME }} Scores"
           path: ${{matrix.directory}}/*.pdf
 
   release_artifacts:
