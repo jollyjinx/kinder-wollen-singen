@@ -51,4 +51,20 @@
   \AWB_Score
   \AWB_Strophen
 }
-
+\include "weihnachtslieder/der_christbaum_ist_der_schoenste_baum_voices.ly"
+\bookpart{
+  \header{
+    date = \DCI_date
+    source = \DCI_source
+    style = \DCI_style
+    maintainer = \DCI_maintainer
+    maintainerEmail = \DCI_maintainerEmail
+    subtitle = \DCI_title
+    poet = \DCI_poet
+    composer = \DCI_composer
+    arranger = \DCI_arranger
+    copyright = \DCI_copyright
+  }
+  \DCI_Score
+  \DCI_Strophen
+}
