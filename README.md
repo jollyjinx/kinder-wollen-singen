@@ -25,6 +25,9 @@ Es gibt
 [Eine Github Action](.github/workflows/release-pdf.yml) konvertiert für jeden Pull Request und für jedes Release _alle_ `.ly`-Dateien zu PDF-Dateien.
 Die so erzeugten PDF-Dateien sind dann in den Action- bzw. [Release-Artifacts](https://github.com/ranacrocando/kinder-wollen-singen/releases) verfügbar.
 
+### Konventionen
+* Wir verwenden die "internationale"/englische B-Notation, d.h. `B` meint das deutsche `H` und `B♭` (Lilypond `bes`) meint das deutsche `B`. Das ist nur bei Akkorden für die Spielenden relevant, und alle, die z.B. Akkorde aus dem Internet verwenden sind daran gewöhnt.
+
 ### Unterschiede zum geforkten Repository von Jollyjinx
 Diese CI ist ein wesentlicher Unterschied zu Jollyinx Repository, bei dem die Datein händisch/lokal konvertiert werden mussten (wahrscheinlich auch, weil es damals noch keine Github Actions gab).
 Außerdem verzichten wir hier auf LaTex bzw. `lilypond-book`, was uns zwar ein bisschen Flexibilität nimmt aber das Setup als Ganzes deutlich vereinfacht.

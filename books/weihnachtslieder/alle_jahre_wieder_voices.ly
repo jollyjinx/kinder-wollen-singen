@@ -1,5 +1,4 @@
 \version "2.24.2"
-\include "deutsch.ly"
 
 % Define variables for header values
 AJW_Title = "Alle Jahre wieder"
@@ -24,7 +23,7 @@ AJW_XaTextStropheEins = \lyricmode {
 }
 
 AJW_XaMelodie = \relative c'' {
-  a4. h8 a4 g | fis2 e | d4 e8( fis) g4 fis | e2. r4 | fis4 a h a | d2 cis4( h) | a g8( fis) g4 a | fis2. r4 \bar "|."
+  a4. b8 a4 g | fis2 e | d4 e8( fis) g4 fis | e2. r4 | fis4 a b a | d2 cis4( b) | a g8( fis) g4 a | fis2. r4 \bar "|."
 }
 
 AJW_XaGesang =
