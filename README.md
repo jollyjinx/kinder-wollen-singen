@@ -5,7 +5,7 @@ Das Repository basiert auf der [Vorarbeit von Patrick Stein (aka Jollyjinx)](htt
 der wiederum Teile des unter "Creative Commons" lizensierten Materials von der (nicht mehr existierenden) Musikpiraten-Website kopiert hatte.
 
 ## Urheberrecht
-Dieses Repository ist, sofern nicht in einzelnen Dateien anders angegeben, unter der [Creative Commons Public Domain License](http://creativecommons.org/publicdomain/zero/1.0/deed.de) lizensiert.
+Dieses Repository ist, sofern nicht in einzelnen Dateien anders angegeben, unter der [Creative Commons Public Domain License](LICENSE) lizensiert.
 
 ## Weihnachtslieder
 
