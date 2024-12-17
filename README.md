@@ -1,60 +1,31 @@
-author: patrick stein
-the part I've done is under the [creative commons public domain license](http://creativecommons.org/publicdomain/zero/1.0/deed.de)
-the book directory contains other cc licensed material I got from the musikpiraten website.
+# Gemeinfreie Weihnachtslieder
 
+Dieses Repository enthält gemeinfreie deutsche Weihnachtslieder als [Lilypond](https://lilypond.org/)-Dateien.
+Das Repository basiert auf der [Vorarbeit von Patrick Stein (aka Jollyjinx)](https://github.com/jollyjinx/kinder-wollen-singen),
+der wiederum Teile des unter "Creative Commons" lizensierten Materials von der (nicht mehr existierenden) Musikpiraten-Website kopiert hatte.
 
-This project creates PDF songbooks from lilypond directories
-=============================================================
-I've created the scripts in this directory to create a PDF automatically from the original Lilypond data files.
+## Urheberrecht
+Dieses Repository ist, sofern nicht in einzelnen Dateien anders angegeben, unter der [Creative Commons Public Domain License](http://creativecommons.org/publicdomain/zero/1.0/deed.de) lizensiert.
 
-It creates pdf files like this Weihnachtslieder songbook:
+## Weihnachtslieder
 
-- <a href="Weihnachtslieder.A4.pdf">A4 Version.pdf </a><br/>
-- <a href="Weihnachtslieder.iPad.pdf">iPad Version.pdf </a><br/>
+| Titel / PDF                                                                                                                                                        | Lilypond-Datei                                                                                                  |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| [Adeste Fidelis / Herbei O Ihr Gläubigen](https://github.com/ranacrocando/kinder-wollen-singen/releases/latest/download/adeste_fidelis.pdf)                        | [`adeste_fidelis.ly`](books/weihnachtslieder/adeste_fidelis.ly)                                                 |
+| [Alle Jahre wieder](https://github.com/ranacrocando/kinder-wollen-singen/releases/latest/download/alle_jahre_wieder.pdf)                                           | [`alle_jahre_wieder.ly`](books/weihnachtslieder/alle_jahre_wieder.ly)                                           |
+| [Am Weihnachtsbaume die Lichter brennen](https://github.com/ranacrocando/kinder-wollen-singen/releases/latest/download/am_weihnachtsbaume_die_lichter_brennen.pdf) | [`am_weihnachtsbaume_die_lichter_brennen.ly`](books/weihnachtslieder/am_weihnachtsbaume_die_lichter_brennen.ly) |
+| [ALLE WEIHNACHTSLIEDER](https://github.com/ranacrocando/kinder-wollen-singen/releases/latest/download/weihnachtslieder.pdf) (noch unvollständig)                   | [`weihnachtslieder.ly`](books/weihnachtslieder.ly)                                                              |
 
+## Unter der Haube
+Nur die `.ly`-Dateien werden in git verwaltet.
+Es gibt
+1. sowohl einzelne Weihnachtslieder
+2. als auch eine große [`weihnachtslieder.ly`](books/weihnachtslieder.ly)-Datei, die alle einzelnen Weihnachtslieder in einer großen Datei zusammenfasst.
 
-Background
-----------
+[Eine Github Action](.github/workflows/release-pdf.yml) konvertiert für jeden Pull Request und für jedes Release _alle_ `.ly`-Dateien zu PDF-Dateien.
+Die so erzeugten PDF-Dateien sind dann in den Action- bzw. Release-Artifacts verfügbar.
 
-Two days ago I saw the CC licensed Weihnachtslieder PDF and got the shivers. It was so pixelated I could not even watch it on screen. I've looked at it closer and saw that the creator used a OpenOffice document to create the PDF. He/She also inserted rendered images in the OpenOffice document - no wonder it was so horrible to look at.
-I've then taken a look at the original data and it was done in LilyPond - which I've never heard about before. LilyPond seems to be a special kind of TeX markup and it is used to do create songfiles that look great and are easy to create.
-As I've used TeX for some other project a few years ago I was sure that I could create a PDF with LilyPond and TeX to create perfect , sharp output.
-
-
-Requirements
-------------
-* TeX ( I used the one from http://www.tug.org/mactex/ )
-* LilyPond.app ( I used the one from http://lilypond.org/ )
-* a Mac ( a linux machine will also work if you change the paths I presume )
-
-
-Usage
------
-Open Terminal and go to this directory. Type 'createSongBooks.zsh' and after some time you should get a Weihnachtslieder.iPad.pdf in this directory.
-
-
-How it works
-------------
-The create script creates books for every directory in the books directory as well as for every bookstyle (*.tex files ) present in the current directory.
-It calls the createlatexbook.perl script for every book and creates to merge the LaTeX style file with the files present in the current book directory.
-After that lilybook is called and the latex is generated. 
-Then pdflatex is called to create the final pdf.
-
-
-ToDo
-----
-* get LaTeX fixed ( paper margins )
-* get some Songs fixed ( ros ist entsprungen mehrstimming )
-* correct usage of utf8 everywhere. Currently I convert Umlauts to "u symbols
-
-
-Bugs
-----
-Currently the lilypond process exits sometimes with fonts that are not found. That's why it currently will test not the exit status of lilypond book process.
-I call latex twice to get the tables of contents filled correctly - anybody has knowledge how to correct this ?
-
-
-
-
-
+### Unterschiede zum geforkten Repository von Jollyjinx
+Diese CI ist ein wesentlicher Unterschied zu Jollyinx Repository, bei dem die Datein händisch/lokal konvertiert werden mussten (wahrscheinlich auch, weil es damals noch keine Github Actions gab).
+Außerdem verzichten wir hier auf LaTex bzw. `lilypond-book`, was uns zwar ein bisschen Flexibilität nimmt aber das Setup als Ganzes deutlich vereinfacht.
 
