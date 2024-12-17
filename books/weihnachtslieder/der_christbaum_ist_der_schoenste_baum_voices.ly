@@ -1,5 +1,4 @@
 \version "2.24.2"
-\include "deutsch.ly"
 
 DCI_date = "19th century"
 DCI_source = "Das Buch der Weihnachtslieder. Bremen, 1896"
@@ -32,20 +31,20 @@ DCI_upper = \relative c' {
   \time 4/4
   \partial 4
   << {d4} \\ {d4}>>
-  << {h'4 d, c' d,} \\ {g4 d fis d} >>
-  << {d'4. c8 h4 a4} \\ {g4. g8 g4 fis4} >>
-  << {g4 d4 c'4 h4} \\ {d,4 d4 fis4 g4} >>
-  << {h4 a4} \\ {g4 fis4} >> r4 << {d'4} \\ {fis,4} >>
-  << {d'4 h4 e4. d8} \\ {g,4 g g4. g8} >>
-  << {d'8 c8 c8 h8 c4 a4 } \\ {fis4 fis4 fis4 fis4} >>
+  << {b'4 d, c' d,} \\ {g4 d fis d} >>
+  << {d'4. c8 b4 a4} \\ {g4. g8 g4 fis4} >>
+  << {g4 d4 c'4 b4} \\ {d,4 d4 fis4 g4} >>
+  << {b4 a4} \\ {g4 fis4} >> r4 << {d'4} \\ {fis,4} >>
+  << {d'4 b4 e4. d8} \\ {g,4 g g4. g8} >>
+  << {d'8 c8 c8 b8 c4 a4 } \\ {fis4 fis4 fis4 fis4} >>
   << {c'4 a4 d4. c8} \\ {fis,4 fis a fis} >>
-  << {c'8 h8 h8 a8 h4 d,4} \\ {g4 fis4 g d} >>
-  << {e4 fis g a} \\ {c,4 c h e} >>
-  << {h'2 g4 fis4} \\ {dis2 e4 dis4} >>
-  << {g4 a h c} \\ {e, fis g g} >>
-  << {d'2 h4 e4} \\ {a,2 g4 g4} >>
+  << {c'8 b8 b8 a8 b4 d,4} \\ {g4 fis4 g d} >>
+  << {e4 fis g a} \\ {c,4 c b e} >>
+  << {b'2 g4 fis4} \\ {dis2 e4 dis4} >>
+  << {g4 a b c} \\ {e, fis g g} >>
+  << {d'2 b4 e4} \\ {a,2 g4 g4} >>
   << {d'2 (c2)} \\ {g2. (fis4)} >>
-  << {h2} \\ {g2} >> r4
+  << {b2} \\ {g2} >> r4
   \bar "|."
 }
 
@@ -56,20 +55,20 @@ DCI_lower = \relative c {
   \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   \partial 4
-  << {h'4} \\ {g} >>
-  << {d' h c c} \\ {g g a a} >>
-  << {h4. e8 d4 d8 c8} \\ {h4. c8 fis,4 c4} >>
-  << {h' h c d} \\ {g, h a g} >>
+  << {b'4} \\ {g} >>
+  << {d b c c} \\ {g g a a} >>
+  << {b4. e8 d4 d8 c8} \\ {b4. c8 fis,4 c4} >>
+  << {b' b c d} \\ {g, b a g} >>
   << {d' d} \\ {d c,} >> r4 << {d'} \\ {c} >>
-  << {d d c4. d8} \\ {h4 g c4. h8} >>
+  << {d d c4. d8} \\ {b4 g c4. b8} >>
   << {d4 d d d} \\ {a4 d, a' d,} >>
   << {d' d d d} \\ {a d, fis d} >>
-  << {d' d d a} \\ {g d g h,} >>
+  << {d' d d a} \\ {g d g b,} >>
   << {g' a g e} \\ {c a e' c} >>
-  << {fis (h) h h} \\ {h,2 e4 h4} >>
-  << {h' dis dis e} \\ {e, dis g e} >>
+  << {fis (b) b b} \\ {b,2 e4 b4} >>
+  << {b' dis dis e} \\ {e, dis g e} >>
   << {d'2 d4 c} \\ {fis,2 g4 c,} >>
-  << {h'2 a4 (d)} \\ {d,1} >>
+  << {b'2 a4 (d)} \\ {d,1} >>
   << {d'2} \\ {g,2} >> r4
   \bar "|."
 }
