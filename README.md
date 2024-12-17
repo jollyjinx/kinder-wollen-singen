@@ -23,7 +23,7 @@ Es gibt
 2. als auch eine große [`weihnachtslieder.ly`](books/weihnachtslieder.ly)-Datei, die alle einzelnen Weihnachtslieder in einer großen Datei zusammenfasst.
 
 [Eine Github Action](.github/workflows/release-pdf.yml) konvertiert für jeden Pull Request und für jedes Release _alle_ `.ly`-Dateien zu PDF-Dateien.
-Die so erzeugten PDF-Dateien sind dann in den Action- bzw. Release-Artifacts verfügbar.
+Die so erzeugten PDF-Dateien sind dann in den Action- bzw. [Release-Artifacts](https://github.com/ranacrocando/kinder-wollen-singen/releases) verfügbar.
 
 ### Unterschiede zum geforkten Repository von Jollyjinx
 Diese CI ist ein wesentlicher Unterschied zu Jollyinx Repository, bei dem die Datein händisch/lokal konvertiert werden mussten (wahrscheinlich auch, weil es damals noch keine Github Actions gab).
