@@ -38,5 +38,17 @@
   \ADF_Strophen
 }
 
+\include "weihnachtslieder/am_weihnachtsbaume_die_lichter_brennen_voices.ly"
 
+\bookpart{
+  \header {
+    subtitle = \AWB_Title
+    composer = \AWB_Composer
+    poet = \AWB_Poet
+    copyright = \AWB_Copyright
+    arranger = \AWB_Arranger
+  }
+  \AWB_Score
+  \AWB_Strophen
+}
 
