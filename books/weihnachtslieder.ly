@@ -82,6 +82,7 @@
   \DHI_Score
   \DHI_Strophen
 }
+
 \include "weihnachtslieder/es_ist_ein_ros_entsprungen-einstimmig_voices.ly"
 \bookpart{
   \header {
@@ -93,5 +94,17 @@
   }
   \EIE_Score
   \EIE_Strophen
+}
 
+\include "weihnachtslieder/es_kommt_ein_schiff_geladen_voices.ly"
+\bookpart{
+  \header {
+    subtitle = \EKE_title
+    composer = \EKE_composer
+    poet = \EKE_poet
+    copyright = \EKE_copyright
+    arranger = \EKE_arranger
+  }
+  \EKE_Score
+  \EKE_Strophen
 }

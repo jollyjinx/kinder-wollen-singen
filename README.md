@@ -17,6 +17,7 @@ Dieses Repository ist, sofern nicht in einzelnen Dateien anders angegeben, unter
 | [Der Christbaum ist der schönste Baum](https://github.com/ranacrocando/kinder-wollen-singen/releases/latest/download/der_christbaum_ist_der_schoenste_baum.ly.pdf) | [`der_christbaum_ist_der_schoenste_baum.ly`](books/weihnachtslieder/der_christbaum_ist_der_schoenste_baum.ly)   |
 | [Der Heiland ist geboren](https://github.com/ranacrocando/kinder-wollen-singen/releases/latest/download/der_heiland_ist_geboren.pdf)                               | [`der_heiland_ist_geboren.ly`](books/weihnachtslieder/der_heiland_ist_geboren.ly)                               |
 | [Es ist ein Ros entsprungen](https://github.com/ranacrocando/kinder-wollen-singen/releases/latest/download/es_ist_ein_ros_entsprungen-einstimmig.pdf)              | [`es_ist_ein_ros_entsprungen-einstimmig.ly`](books/weihnachtslieder/es_ist_ein_ros_entsprungen-einstimmig.ly)   |
+| [Es kommt ein Schiff geladen](https://github.com/ranacrocando/kinder-wollen-singen/releases/latest/download/es_kommt_ein_schiff_geladen.pdf)                       | [`es_kommt_ein_schiff_geladen.ly`](books/weihnachtslieder/es_kommt_ein_schiff_geladen.ly)                       |
 | [ALLE WEIHNACHTSLIEDER](https://github.com/ranacrocando/kinder-wollen-singen/releases/latest/download/weihnachtslieder.pdf) (noch unvollständig)                   | [`weihnachtslieder.ly`](books/weihnachtslieder.ly)                                                              |
 
 ## Unter der Haube
