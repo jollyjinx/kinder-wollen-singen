@@ -82,3 +82,16 @@
   \DHI_Score
   \DHI_Strophen
 }
+\include "weihnachtslieder/es_ist_ein_ros_entsprungen-einstimmig_voices.ly"
+\bookpart{
+  \header {
+    subtitle = \EIE_title
+    composer = \EIE_composer
+    poet = \EIE_poet
+    arranger = \EIE_arranger
+    copyright = \EIE_copyright
+  }
+  \EIE_Score
+  \EIE_Strophen
+
+}
