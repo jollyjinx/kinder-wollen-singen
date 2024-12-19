@@ -149,3 +149,19 @@
   \ILU_Score
   \ILU_Strophen
 }
+
+\include "weihnachtslieder/ihr_kinderlein_kommet_voices.ly"
+\bookpart{
+  \header {
+    subtitle = \IKK_title
+    poet = \IKK_poet
+    composer = \IKK_composer
+    arranger = \IKK_arranger
+    maintainerEmail = \IKK_maintainerEmail
+    maintainerWeb = \IKK_maintainerWeb
+    copyright = \IKK_copyright
+  }
+
+  \IKK_Score
+  \IKK_Strophen
+}
