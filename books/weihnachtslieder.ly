@@ -21,6 +21,7 @@
 \include "weihnachtslieder/lasst_uns_froh_und_munter_sein_voices.ly" % LUF
 \include "weihnachtslieder/leise_rieselt_der_schnee_voices.ly" % LRS
 \include "weihnachtslieder/macht_hoch_die_tuer_voices.ly" % MHT
+\include "weihnachtslieder/morgen_kinder_wirds_was_geben_voices.ly" % MKW
 
 \book{
   \header{
@@ -264,5 +265,18 @@
     }
     \MHT_Score
     \MHT_Strophen
+  }
+  \bookpart{
+    \header {
+      title = \MKW_title
+      poet = \MKW_poet
+      composer = \MKW_composer
+      arranger = \MKW_arranger
+      maintainerEmail = \MKW_maintainerEmail
+      maintainerWeb = \MKW_maintainerWeb
+      copyright = \MKW_copyright
+    }
+    \MKW_Score
+    \MKW_Strophen
   }
 }
