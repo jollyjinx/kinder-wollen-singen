@@ -19,6 +19,7 @@
 \include "weihnachtslieder/kling_gloeckchen_voices.ly" % KGK
 \include "weihnachtslieder/kommet_ihr_hirten_voices.ly" % KIH
 \include "weihnachtslieder/lasst_uns_froh_und_munter_sein_voices.ly" % LUF
+\include "weihnachtslieder/leise_rieselt_der_schnee_voices.ly" % LRS
 
 \book{
   \header{
@@ -236,5 +237,18 @@
     }
     \LUF_Score
     \LUF_Strophen
+  }
+  \bookpart{
+    \header {
+      title = \LRS_title
+      poet = \LRS_poet
+      composer =  \LRS_composer
+      arranger = \LRS_arranger
+      maintainerEmail = \LRS_maintainerEmail
+      maintainerWeb = \LRS_maintainerWeb
+      copyright = \LRS_copyright
+    }
+    \LRS_Score
+    \LRS_Strophen
   }
 }
