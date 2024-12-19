@@ -15,7 +15,7 @@
 \include "weihnachtslieder/ich_lag_und_schlief_da_traeumte_mir_voices.ly" % ILU
 \include "weihnachtslieder/ihr_kinderlein_kommet_voices.ly" % IKK
 \include "weihnachtslieder/jingle_bells_voices.ly" % JIB
-
+\include "weihnachtslieder/joseph_lieber_joseph_mein_voices.ly" %JLJ
 
 \book{
   \header{
@@ -185,5 +185,18 @@
     \JIB_Score
     \JIB_Strophen
 
+  }
+
+  \bookpart{
+    \header {
+      title = \JLJ_title
+      composer = \JLJ_composer
+      poet = \JLJ_poet
+      arranger = \JLJ_arranger
+      copyright = \JLJ_copyright
+    }
+
+    \JLJ_Score
+    \JLJ_Strophen
   }
 }
