@@ -20,6 +20,7 @@
 \include "weihnachtslieder/kommet_ihr_hirten_voices.ly" % KIH
 \include "weihnachtslieder/lasst_uns_froh_und_munter_sein_voices.ly" % LUF
 \include "weihnachtslieder/leise_rieselt_der_schnee_voices.ly" % LRS
+\include "weihnachtslieder/macht_hoch_die_tuer_voices.ly" % MHT
 
 \book{
   \header{
@@ -250,5 +251,18 @@
     }
     \LRS_Score
     \LRS_Strophen
+  }
+  \bookpart{
+    \header {
+      title = \MHT_title
+      poet = \MHT_poet
+      composer = \MHT_composer
+      arranger = \MHT_arranger
+      maintainerEmail = \MHT_maintainerEmail
+      maintainerWeb = \MHT_maintainerWeb
+      copyright = \MHT_copyright
+    }
+    \MHT_Score
+    \MHT_Strophen
   }
 }
