@@ -120,3 +120,16 @@
   }
   \EWS_Score
 }
+\include "weihnachtslieder/froehliche_weihnacht_voices.ly"
+\bookpart{
+  \header{
+    subtitle = \FWU_title
+    poet = \FWU_poet
+    composer = \FWU_composer
+    arranger = \FWU_arranger
+    copyright = \FWU_copyright
+  }
+  \FWU_Score
+}
+
+
