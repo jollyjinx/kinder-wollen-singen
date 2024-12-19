@@ -18,6 +18,7 @@
 \include "weihnachtslieder/joseph_lieber_joseph_mein_voices.ly" % JLJ
 \include "weihnachtslieder/kling_gloeckchen_voices.ly" % KGK
 \include "weihnachtslieder/kommet_ihr_hirten_voices.ly" % KIH
+\include "weihnachtslieder/lasst_uns_froh_und_munter_sein_voices.ly" % LUF
 
 \book{
   \header{
@@ -224,5 +225,16 @@
     }
     \KIH_Score
     \KIH_Strophen
+  }
+  \bookpart{
+    \header {
+      title = \LUF_title
+      poet = \LUF_poet
+      composer =  \LUF_composer
+      arranger = \LUF_arranger
+      copyright = \LUF_copyright
+    }
+    \LUF_Score
+    \LUF_Strophen
   }
 }
