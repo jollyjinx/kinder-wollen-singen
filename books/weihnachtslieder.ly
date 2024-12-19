@@ -108,3 +108,15 @@
   \EKE_Score
   \EKE_Strophen
 }
+
+\include "weihnachtslieder/es_wird_scho_gleich_dumpa_voices.ly"
+\bookpart{
+  \header {
+    subtitle = \EWS_title
+    composer = \EWS_composer
+    poet = \EWS_poet
+    arranger = \EWS_arranger
+    copyright = \EWS_copyright
+  }
+  \EWS_Score
+}
