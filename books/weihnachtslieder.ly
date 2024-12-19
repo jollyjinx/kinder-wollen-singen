@@ -1,5 +1,5 @@
 \version "2.24.2"
-
+#(set-default-paper-size "a5")
 % includes must be placed on root level (and NOT inside a bookpart):
 % https://mail.gnu.org/archive/html/lilypond-user/2023-03/msg00176.html
 
@@ -15,8 +15,9 @@
 \include "weihnachtslieder/ich_lag_und_schlief_da_traeumte_mir_voices.ly" % ILU
 \include "weihnachtslieder/ihr_kinderlein_kommet_voices.ly" % IKK
 \include "weihnachtslieder/jingle_bells_voices.ly" % JIB
-\include "weihnachtslieder/joseph_lieber_joseph_mein_voices.ly" %JLJ
-\include "weihnachtslieder/kling_gloeckchen_voices.ly" %KGK
+\include "weihnachtslieder/joseph_lieber_joseph_mein_voices.ly" % JLJ
+\include "weihnachtslieder/kling_gloeckchen_voices.ly" % KGK
+\include "weihnachtslieder/kommet_ihr_hirten_voices.ly" % KIH
 
 \book{
   \header{
@@ -209,5 +210,19 @@
       copyright = \KGK_copyright
     }
     \KGK_Score
+  }
+
+  \bookpart{
+    \header {
+      title = \KIH_title
+      poet = \KIH_poet
+      composer = \KIH_composer
+      arranger = \KIH_arranger
+      maintainerEmail = \KIH_maintainerEmail
+      maintainerWeb = \KIH_maintainerWeb
+      copyright = \KIH_copyright
+    }
+    \KIH_Score
+    \KIH_Strophen
   }
 }
