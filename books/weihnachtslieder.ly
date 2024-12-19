@@ -14,6 +14,7 @@
 \include "weihnachtslieder/froehliche_weihnacht_voices.ly" %FWU
 \include "weihnachtslieder/ich_lag_und_schlief_da_traeumte_mir_voices.ly" % ILU
 \include "weihnachtslieder/ihr_kinderlein_kommet_voices.ly" % IKK
+\include "weihnachtslieder/jingle_bells_voices.ly" % JIB
 
 
 \book{
@@ -171,5 +172,18 @@
 
     \IKK_Score
     \IKK_Strophen
+  }
+
+  \bookpart{
+    \header {
+      title = \JIB_title
+      subtitle = \JIB_subtitle
+      composer = \JIB_composer
+      arranger = \JIB_arranger
+    }
+
+    \JIB_Score
+    \JIB_Strophen
+
   }
 }
