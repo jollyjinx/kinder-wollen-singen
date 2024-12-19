@@ -16,6 +16,7 @@
 \include "weihnachtslieder/ihr_kinderlein_kommet_voices.ly" % IKK
 \include "weihnachtslieder/jingle_bells_voices.ly" % JIB
 \include "weihnachtslieder/joseph_lieber_joseph_mein_voices.ly" %JLJ
+\include "weihnachtslieder/kling_gloeckchen_voices.ly" %KGK
 
 \book{
   \header{
@@ -198,5 +199,15 @@
 
     \JLJ_Score
     \JLJ_Strophen
+  }
+  \bookpart{
+    \header{
+      title = \KGK_title
+      poet = \KGK_poet
+      composer = \KGK_composer
+      arranger =\KGK_arranger
+      copyright = \KGK_copyright
+    }
+    \KGK_Score
   }
 }
