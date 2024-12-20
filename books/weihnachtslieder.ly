@@ -34,6 +34,10 @@
 \include "weihnachtslieder/zu_bethlehem_geboren_voices.ly" % ZBG
 
 \book{
+  \paper{
+    evenFooterMarkup = "kinder-wollen-singen.de"
+    oddFooterMarkup = \markup{\epsfile #X #6 #"qrcode.eps"}
+  }
   % Title Page
   \markup {
     \column {
