@@ -30,6 +30,7 @@
 \include "weihnachtslieder/still_still_still_voices.ly" % SSS
 \include "weihnachtslieder/stille_nacht_heilige_nacht_voices.ly" % SNH
 \include "weihnachtslieder/tochter_zion_freue_dich_voices.ly" % TZF
+\include "weihnachtslieder/vom_himmel_hoch_voices.ly" % VHH
 
 \book{
   \header{
@@ -366,5 +367,16 @@
     }
     \TZF_Score
     \TZF_Strophen
+  }
+  \bookpart{
+  \header {
+  title = \VHH_title
+  composer = \VHH_composer
+  arranger = \VHH_arranger
+  copyright = \VHH_copyright
+  maintainerEmail = \VHH_maintainerEmail
+}
+\VHH_Score
+\VHH_Strophen
   }
 }
