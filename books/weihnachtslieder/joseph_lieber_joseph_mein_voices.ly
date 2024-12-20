@@ -45,7 +45,6 @@ JLJ_Score = {
     \override Score.BarNumber.break-visibility = #end-of-line-invisible %%every bar is numbered.!!!
     %% remove previous line to get barnumbers only at beginning of system.
     #(set-accidental-style 'modern-cautionary)
-    \set Score.markFormatter = #format-mark-box-letters %%boxed rehearsal-marks
     \override Score.TimeSignature.style = #'() %%makes timesigs always numerical
     %% remove previous line to get cut-time/alla breve or common time
     \set Score.pedalSustainStyle = #'mixed

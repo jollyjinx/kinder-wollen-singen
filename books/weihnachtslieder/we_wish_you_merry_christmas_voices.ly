@@ -67,7 +67,6 @@ WWY_Score = \score {
     \set Score.skipBars = ##t
     \override Score.BarNumber.break-visibility = #end-of-line-invisible
     #(set-accidental-style 'modern-cautionary)
-    \set Score.markFormatter = #format-mark-box-letters
     \override Score.TimeSignature.style = #'()
     \set Score.pedalSustainStyle = #'mixed
     \override Score.TrillSpanner.bound-details.right.padding = #-2
