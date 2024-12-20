@@ -55,8 +55,6 @@ TZF_Strophen = \markup {
     "Gründe nun dein ewges Reich, Hosianna in der Höh!"
     "Hosianna, Davids Sohn, sei gesegnet deinem Volk!"
   }
-}
-\markup {
   \bold "3."
   \column {
     "Hosianna, Davids Sohn, sei gegrüßet, König mild!"

@@ -4,12 +4,6 @@ JIB_title = "Jingle Bells"
 JIB_subtitle = "Or the one horse open sleigh"
 JIB_composer = "James Pierpont"
 JIB_arranger = "Gesetzt für kinder-wollen-singen.de"
-\header {
-  title = \JIB_title
-  subtitle = \JIB_subtitle
-  composer = \JIB_composer
-  arranger = \JIB_arranger
-}
 
 JIB_AvoiceAA = \relative c'{
   \set Staff.instrumentName = #""
@@ -85,11 +79,6 @@ JIB_Score = \score {
     %% In my experience the normal thing in printed scores is maj7 and not the triangle. (olagunde):
     \set Score.majorSevenSymbol = \markup {maj7}
   >>
-
-  %% Boosey and Hawkes, and Peters, have barlines spanning all staff-groups in a score,
-  %% Eulenburg and Philharmonia, like Lilypond, have no barlines between staffgroups.
-  %% If you want the Eulenburg/Lilypond style, comment out the following line:
-  \layout {\context {\Score \consists Span_bar_engraver}}
 }%% end of score-block
 
 JIB_Strophen = \markup {

@@ -194,7 +194,6 @@
   \bookpart{
     \header {
       title = \JIB_title
-      subtitle = \JIB_subtitle
       composer = \JIB_composer
       arranger = \JIB_arranger
     }

@@ -7,16 +7,6 @@ IKK_maintainerEmail = "PeteCrighton@googlemail.com"
 IKK_maintainerWeb = "http://www.petercrighton.de"
 IKK_copyright = "Public Domain"
 
-\header {
-  title = \IKK_title
-  poet = \IKK_poet
-  composer = \IKK_composer
-  arranger = \IKK_arranger
-  maintainerEmail = \IKK_maintainerEmail
-  maintainerWeb = \IKK_maintainerWeb
-  copyright = \IKK_copyright
-}
-
 IKK_akkorde = \chordmode {
   r8 d1 a2:7 d a a:7 d g a d a:7 d4.
 }
