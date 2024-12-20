@@ -26,6 +26,7 @@
 \include "weihnachtslieder/morgen_kommt_der_weihnachtsmann_voices.ly" % MKD
 \include "weihnachtslieder/oh_du_froehliche_voices.ly" % ODF
 \include "weihnachtslieder/oh_tannenbaum_voices.ly" % OTB
+\include "weihnachtslieder/schneefloeckchen_voices.ly" % SWR
 
 \book{
   \header{
@@ -317,5 +318,16 @@
     }
 
     \OTB_Score
+  }
+  \bookpart{
+  \header {
+  title = \SWR_title
+  composer = \SWR_composer
+  poet = \SWR_poet
+  arranger = \SWR_arranger
+  copyright = \SWR_copyright
+}
+\SWR_Score
+\SWR_Strophen
   }
 }
