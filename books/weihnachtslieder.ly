@@ -29,6 +29,7 @@
 \include "weihnachtslieder/schneefloeckchen_voices.ly" % SWR
 \include "weihnachtslieder/still_still_still_voices.ly" % SSS
 \include "weihnachtslieder/stille_nacht_heilige_nacht_voices.ly" % SNH
+\include "weihnachtslieder/tochter_zion_freue_dich_voices.ly" % TZF
 
 \book{
   \header{
@@ -354,6 +355,16 @@
     }
     \SNH_Score
     \SNH_Strophen
-
+  }
+  \bookpart{
+    \header {
+      title = \TZF_title
+      composer = \TZF_composer
+      poet = \TZF_poet
+      arranger = \TZF_arranger
+      copyright = \TZF_copyright
+    }
+    \TZF_Score
+    \TZF_Strophen
   }
 }
