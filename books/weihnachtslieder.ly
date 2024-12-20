@@ -1,5 +1,4 @@
 \version "2.24.2"
-% #(set-default-paper-size "a5")
 
 % includes must be placed on root level (and NOT inside a bookpart):
 % https://mail.gnu.org/archive/html/lilypond-user/2023-03/msg00176.html
@@ -35,9 +34,67 @@
 \include "weihnachtslieder/zu_bethlehem_geboren_voices.ly" % ZBG
 
 \book{
-  \header{
-    title = "Kinder wollen Singen"
+  % Title Page
+  \markup {
+    \column {
+      \vspace #10
+      \fill-line {
+        \null
+        \fontsize #10
+        \bold "Kinder wollen Singen"
+        \null
+      }
+      \vspace #1
+      \fill-line {
+        \null
+        \fontsize #5
+        "Eine Sammlung von Weihnachtsliedern"
+        \null
+      }
+      \vspace #2
+      \fill-line {
+        \null
+        \fontsize #5
+        \italic "frei kopier- und adaptierbar"
+        \null
+      }
+      \vspace #2
+      \fill-line{
+        \null
+        \epsfile #Y #50 #"christmastree.eps"
+        \null
+      }
+      \vspace #2
+      \fill-line{
+        \null
+        \with-url
+        "https://w.wiki/CUNN"
+        {
+          \fontsize #-5
+          "Titelbild Weihnachtsbaum von Nanin7, Lizenz: CC-BY-SA 3.0"
+        }\null
+      }
+
+      \fill-line{
+        \null
+        \epsfile #X #33 #"qrcode.eps"
+        \null
+      }
+      \vspace #1
+      \fill-line{
+        \null
+        \with-url
+        "https://ranacrocando.github.io/kinder-wollen-singen/"
+        {
+          \fontsize #1
+          "ranacrocando.github.io/kinder-wollen-singen"
+        }\null
+      }
+    }
   }
+
+  \pageBreak
+
   \bookpart{
     \header {
       date = \ADF_date
