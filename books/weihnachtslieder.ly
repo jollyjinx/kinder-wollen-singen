@@ -28,6 +28,7 @@
 \include "weihnachtslieder/oh_tannenbaum_voices.ly" % OTB
 \include "weihnachtslieder/schneefloeckchen_voices.ly" % SWR
 \include "weihnachtslieder/still_still_still_voices.ly" % SSS
+\include "weihnachtslieder/stille_nacht_heilige_nacht_voices.ly" % SNH
 
 \book{
   \header{
@@ -340,5 +341,19 @@
     }
     \SSS_Score
     \SSS_Strophen
+  }
+  \bookpart{
+    \header {
+      title = \SNH_title
+      poet = \SNH_poet
+      composer = \SNH_composer
+      arranger = \SNH_arranger
+      copyright = \SNH_copyright
+      maintainerEmail = \SNH_maintainerEmail
+      maintainerWeb = \SNH_maintainerWeb
+    }
+    \SNH_Score
+    \SNH_Strophen
+
   }
 }
