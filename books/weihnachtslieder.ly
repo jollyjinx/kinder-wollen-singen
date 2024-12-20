@@ -27,6 +27,7 @@
 \include "weihnachtslieder/oh_du_froehliche_voices.ly" % ODF
 \include "weihnachtslieder/oh_tannenbaum_voices.ly" % OTB
 \include "weihnachtslieder/schneefloeckchen_voices.ly" % SWR
+\include "weihnachtslieder/still_still_still_voices.ly" % SSS
 
 \book{
   \header{
@@ -320,14 +321,24 @@
     \OTB_Score
   }
   \bookpart{
-  \header {
-  title = \SWR_title
-  composer = \SWR_composer
-  poet = \SWR_poet
-  arranger = \SWR_arranger
-  copyright = \SWR_copyright
-}
-\SWR_Score
-\SWR_Strophen
+    \header {
+      title = \SWR_title
+      composer = \SWR_composer
+      poet = \SWR_poet
+      arranger = \SWR_arranger
+      copyright = \SWR_copyright
+    }
+    \SWR_Score
+    \SWR_Strophen
+  }
+  \bookpart {
+    \header{
+      poet = \SSS_poet
+      title = \SSS_title
+      arranger = \SSS_arranger
+      copyright = \SSS_copyright
+    }
+    \SSS_Score
+    \SSS_Strophen
   }
 }
