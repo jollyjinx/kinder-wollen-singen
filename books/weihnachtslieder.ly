@@ -1,5 +1,6 @@
 \version "2.24.2"
-#(set-default-paper-size "a5")
+% #(set-default-paper-size "a5")
+
 % includes must be placed on root level (and NOT inside a bookpart):
 % https://mail.gnu.org/archive/html/lilypond-user/2023-03/msg00176.html
 
@@ -23,6 +24,7 @@
 \include "weihnachtslieder/macht_hoch_die_tuer_voices.ly" % MHT
 \include "weihnachtslieder/morgen_kinder_wirds_was_geben_voices.ly" % MKW
 \include "weihnachtslieder/morgen_kommt_der_weihnachtsmann_voices.ly" % MKD
+\include "weihnachtslieder/oh_du_froehliche_voices.ly" % ODF
 
 \book{
   \header{
@@ -289,5 +291,19 @@
       copyright = \MKD_copyright
     }
     \MKD_Score
+  }
+  \bookpart{
+    \header {
+      title = \ODF_title
+      poet = \ODF_poet
+      maintainerEmail = \ODF_maintainerEmail
+      maintainerWeb = \ODF_maintainerWeb
+      composer = \ODF_composer
+      arranger = \ODF_arranger
+      copyright = \ODF_copyright
+    }
+    \ODF_Score
+    \ODF_Strophen
+
   }
 }
