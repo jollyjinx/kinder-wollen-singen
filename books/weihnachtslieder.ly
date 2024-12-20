@@ -22,6 +22,7 @@
 \include "weihnachtslieder/leise_rieselt_der_schnee_voices.ly" % LRS
 \include "weihnachtslieder/macht_hoch_die_tuer_voices.ly" % MHT
 \include "weihnachtslieder/morgen_kinder_wirds_was_geben_voices.ly" % MKW
+\include "weihnachtslieder/morgen_kommt_der_weihnachtsmann_voices.ly" % MKD
 
 \book{
   \header{
@@ -278,5 +279,15 @@
     }
     \MKW_Score
     \MKW_Strophen
+  }
+  \bookpart{
+    \header{
+      title = \MKD_title
+      poet = \MKD_poet
+      composer = \MKD_composer
+      arranger = \MKD_arranger
+      copyright = \MKD_copyright
+    }
+    \MKD_Score
   }
 }
