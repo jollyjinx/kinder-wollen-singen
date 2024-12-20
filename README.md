@@ -4,10 +4,15 @@ Dieses Repository enthält gemeinfreie deutsche Weihnachtslieder als [Lilypond](
 Das Repository basiert auf der [Vorarbeit von Patrick Stein (aka Jollyjinx)](https://github.com/jollyjinx/kinder-wollen-singen),
 der wiederum Teile des unter "Creative Commons" lizensierten Materials von der (nicht mehr existierenden) Musikpiraten-Website kopiert hatte.
 
+## PDF mit allen Weihnachtsliedern
+➡️[**Download der PDF mit allen Weihnachtsliedern**](https://github.com/ranacrocando/kinder-wollen-singen/releases/latest/download/weihnachtslieder.pdf)⬅️
+
+Für einzelne PDFs, siehe unten.
+
 ## Urheberrecht
 Dieses Repository ist, sofern nicht in einzelnen Dateien anders angegeben, unter der [Creative Commons Public Domain License](LICENSE) lizensiert.
 
-## Weihnachtslieder
+## Liste aller enthaltenen Weihnachtslieder
 
 | Titel / PDF                                                                                                                                                        | Tonart | Akkorde | Satz             | Lilypond-Datei                                                                                                  |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|---------|------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -40,9 +45,9 @@ Dieses Repository ist, sofern nicht in einzelnen Dateien anders angegeben, unter
 | [Vom Himmel hoch](https://github.com/ranacrocando/kinder-wollen-singen/releases/latest/download/vom_himmel_hoch.pdf)                                               | C      | ✅       | einstimmig       | [`vom_himmel_hoch.ly`](books/weihnachtslieder/vom_himmel_hoch.ly)                                               |
 | [We wish you a merry christmas](https://github.com/ranacrocando/kinder-wollen-singen/releases/latest/download/we_wish_you_a_merry_christmas.pdf)                   | D      | ✅       | einstimmig       | [`we_wish_you_a_merry_christmas.ly`](books/weihnachtslieder/we_wish_you_a_merry_christmas.ly)                   |
 | [Zu Bethlehem geboren](https://github.com/ranacrocando/kinder-wollen-singen/releases/latest/download/zu_bethlehem_geboren.pdf)                                     | F      | ❌       | einstimmig       | [`zu_bethlehem_geboren.ly`](books/weihnachtslieder/zu_bethlehem_geboren.ly)                                     |
-| [ALLE WEIHNACHTSLIEDER](https://github.com/ranacrocando/kinder-wollen-singen/releases/latest/download/weihnachtslieder.pdf) (noch unvollständig)                   |        |         |                  | [`weihnachtslieder.ly`](books/weihnachtslieder.ly)                                                              |
+| [ALLE WEIHNACHTSLIEDER](https://github.com/ranacrocando/kinder-wollen-singen/releases/latest/download/weihnachtslieder.pdf)                                        |        |         |                  | [`weihnachtslieder.ly`](books/weihnachtslieder.ly)                                                              |
 
-## Unter der Haube
+## Unter der Haube / Technische Details
 Nur die `.ly`-Dateien werden in git verwaltet.
 Es gibt
 1. sowohl einzelne Weihnachtslieder als "Standalone"
