@@ -32,6 +32,7 @@
 \include "weihnachtslieder/tochter_zion_freue_dich_voices.ly" % TZF
 \include "weihnachtslieder/vom_himmel_hoch_voices.ly" % VHH
 \include "weihnachtslieder/we_wish_you_merry_christmas_voices.ly" % WWY
+\include "weihnachtslieder/zu_bethlehem_geboren_voices.ly" % ZBG
 
 \book{
   \header{
@@ -389,5 +390,16 @@
     }
     \WWY_Score
     \WWY_Strophen
+  }
+  \bookpart{
+    \header {
+      title = \ZBG_title
+      composer = \ZBG_composer
+      arranger = \ZBG_arranger
+      copyright = \ZBG_copyright
+    }
+
+    \ZBG_Score
+    \ZBG_Strophen
   }
 }
