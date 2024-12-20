@@ -1,43 +1,17 @@
-%=============================================
-%   created by MuseScore Version: 0.9.6.3
-%          Donnerstag, 25. November 2010
-%=============================================
-
 \version "2.24.2"
 
-#(set-default-paper-size "a4")
+WWY_title = "We Wish You A Merry Christmas"
+WWY_composer = "Traditional aus England"
+WWY_arranger = "Gesetzt für kinder-wollen-singen.de"
+WWY_copyright = "Public Domain"
 
-\paper {
-  line-width    = 190\mm
-  left-margin   = 10\mm
-  top-margin    = 10\mm
-  bottom-margin = 20\mm
-  indent = 0 \mm
-  %%set to ##t if your score is less than one page:
-  ragged-last-bottom = ##t
-  ragged-bottom = ##f
-  %% in orchestral scores you probably want the two bold slashes
-  %% separating the systems: so uncomment the following line:
-  %% system-separator-markup = \slashSeparator
-}
 
-\header {
-  title = "We Wish You A Merry Christmas "
-  composer = "Traditional aus England"
-  poet = "Traditional aus England"
-  arranger = "Gesetzt für kinder-wollen-singen.de"
-  copyright = "Public Domain"
-}
-
-AvoiceAA = \relative c' {
+WWY_AvoiceAA = \relative c' {
   \set Staff.instrumentName = #""
   \set Staff.shortInstrumentName = #""
   \clef treble
   %staffkeysig
   \key d \major
-  %barkeysig:
-  \key d \major
-  %bartimesig:
   \time 3/4
   \partial 4
   a'4     d d8 e d cis      | % 1
@@ -61,7 +35,7 @@ AvoiceAA = \relative c' {
   d2 \bar "|."
 }% end of last bar in partorvoice
 
-ApartAverseA = \lyricmode {
+WWY_ApartAverseA = \lyricmode {
   \set stanza = " 1. "
   We wish you a mer -- ry  Christ -- mas,
   we wish you a mer -- ry  Christ -- mas,
@@ -73,22 +47,22 @@ ApartAverseA = \lyricmode {
   and a hap -- py  New Year!
 }
 
-theChords = \chordmode {
+WWY_theChords = \chordmode {
   s4             d2. g2. e2. a4 g2 a4:7 d1. a1*5/4 e4:7 a2. d1. g2 a4:7 d4
 }%%end of chordlist
 
-akkorde = \chordmode {
+WWY_akkorde = \chordmode {
   s4 d2. g e a fis b:m g2 a4:7 d2. d a b2:m e4:7 a2. d fis:m g2 a4:7 d2
 }
 
-\score {
+WWY_Score = \score {
   <<
-    \new ChordNames { \theChords }
+    \new ChordNames { \WWY_theChords }
     \context Staff = ApartA <<
-      \context Voice = AvoiceAA \AvoiceAA
+      \context Voice = AvoiceAA \WWY_AvoiceAA
     >>
 
-    \context Lyrics = ApartAverseA\lyricsto AvoiceAA  \ApartAverseA
+    \context Lyrics = ApartAverseA\lyricsto AvoiceAA  \WWY_ApartAverseA
 
     \set Score.skipBars = ##t
     \override Score.BarNumber.break-visibility = #end-of-line-invisible
@@ -104,15 +78,9 @@ akkorde = \chordmode {
     \override Score.ChordName.font-size = #0
     \set Score.majorSevenSymbol = \markup {maj7}
   >>
-
-  \layout {
-    \context {
-      \Score \consists Span_bar_engraver
-    }
-  }
 }
 
-\markup {
+WWY_Strophen = \markup {
   \hspace #0.1
   \column {
     \line {
@@ -171,5 +139,3 @@ akkorde = \chordmode {
   }
   \hspace #0.1
 }
-
-#(set-global-staff-size 20)

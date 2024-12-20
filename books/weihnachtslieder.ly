@@ -31,6 +31,7 @@
 \include "weihnachtslieder/stille_nacht_heilige_nacht_voices.ly" % SNH
 \include "weihnachtslieder/tochter_zion_freue_dich_voices.ly" % TZF
 \include "weihnachtslieder/vom_himmel_hoch_voices.ly" % VHH
+\include "weihnachtslieder/we_wish_you_merry_christmas_voices.ly" % WWY
 
 \book{
   \header{
@@ -369,14 +370,24 @@
     \TZF_Strophen
   }
   \bookpart{
-  \header {
-  title = \VHH_title
-  composer = \VHH_composer
-  arranger = \VHH_arranger
-  copyright = \VHH_copyright
-  maintainerEmail = \VHH_maintainerEmail
-}
-\VHH_Score
-\VHH_Strophen
+    \header {
+      title = \VHH_title
+      composer = \VHH_composer
+      arranger = \VHH_arranger
+      copyright = \VHH_copyright
+      maintainerEmail = \VHH_maintainerEmail
+    }
+    \VHH_Score
+    \VHH_Strophen
+  }
+  \bookpart{
+    \header {
+      title = \WWY_title
+      composer = \WWY_composer
+      arranger = \WWY_arranger
+      copyright = \WWY_copyright
+    }
+    \WWY_Score
+    \WWY_Strophen
   }
 }
