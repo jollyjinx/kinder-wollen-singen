@@ -25,6 +25,7 @@
 \include "weihnachtslieder/morgen_kinder_wirds_was_geben_voices.ly" % MKW
 \include "weihnachtslieder/morgen_kommt_der_weihnachtsmann_voices.ly" % MKD
 \include "weihnachtslieder/oh_du_froehliche_voices.ly" % ODF
+\include "weihnachtslieder/oh_tannenbaum_voices.ly" % OTB
 
 \book{
   \header{
@@ -305,5 +306,16 @@
     \ODF_Score
     \ODF_Strophen
 
+  }
+  \bookpart {
+    \header {
+      title = \OTB_title
+      poet = \OTB_poet
+      composer =  \OTB_composer
+      arranger = \OTB_arranger
+      copyright = \OTB_copyright
+    }
+
+    \OTB_Score
   }
 }
