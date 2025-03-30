@@ -1,0 +1,105 @@
+name: Build all Scores
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  release:
+    types: [ published ]
+
+permissions:
+  contents: write
+
+jobs:
+  directories:
+    name: Generate Matrix for Build
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: List all directories
+        id: set-matrix
+        run: |
+          # Find all directories that contain .ly files
+          JSON="{\"include\":["
+          for directory in $(find . -type f -name '*.ly' | sed 's|/[^/]*$||' | sort | uniq); do
+            directory=${directory#./} # Remove leading './'
+            os="ubuntu-latest"
+            JSONline="{\"directory\": \"$directory\", \"os\": \"$os\"},"
+            JSON="$JSON$JSONline"
+          done
+          # Remove last "," and add closing brackets
+          if [[ $JSON == *, ]]; then
+            JSON="${JSON%?}"
+          fi
+          JSON="$JSON]}"
+          echo $JSON
+          # Set output
+          echo "::set-output name=matrix::$( echo "$JSON" )"
+
+  build_scores:
+    name: Compile with Lilypond and Upload PDF Artifacts
+    runs-on: ubuntu-latest
+    needs: [ directories ]
+    strategy:
+      matrix: ${{fromJson(needs.directories.outputs.matrix)}} # List matrix strategy from directories dynamically
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+
+      - name: Install LilyPond
+        uses: codello/setup-lilypond@main
+        with:
+          lilypond-version: 2.24
+
+      - name: Compile .ly files with LilyPond
+        working-directory: ${{matrix.directory}}
+        run: |
+          # Find all .ly files in the specified directory and run LilyPond on each
+          for file in *.ly; do
+            lilypond "$file"
+          done
+      - name: List files for debugging
+        run: |
+          echo "Listing files in ${{matrix.directory}}:"
+          ls -R ${{matrix.directory}}
+      - name: Extract last part of the path
+        id: extract_name
+        run: |
+          # Extract the last part of the directory path
+          # because "/" slashes are invalid in artifact names
+          DIR_NAME=$(basename "${{ matrix.directory }}")
+          echo "DIR_NAME=${DIR_NAME}" >> $GITHUB_ENV
+      - name: Upload PDF Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ env.DIR_NAME }} Scores"
+          path: ${{matrix.directory}}/*.pdf
+
+  release_artifacts:
+    name: Upload Release Artifacts
+    runs-on: ubuntu-latest
+    needs: [ build_scores ]
+    if: github.event_name == 'release'
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+
+      - name: Download All PDF Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: release_pdf
+      - name: Copy all PDFs to root level
+        run: find . -type f -name "*.pdf" -exec cp {} . \;
+      - name: Upload Release Assets
+        uses: softprops/action-gh-release@v2
+        with:
+          body: ${{ steps.create_release_notes.outputs.body }}
+          files: |
+             *.pdf
+          token: ${{ secrets.GITHUB_TOKEN }}
