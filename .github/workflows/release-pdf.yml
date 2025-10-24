@@ -20,7 +20,7 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: List all directories
         id: set-matrix
@@ -50,7 +50,7 @@ jobs:
       matrix: ${{fromJson(needs.directories.outputs.matrix)}} # List matrix strategy from directories dynamically
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install LilyPond
         uses: codello/setup-lilypond@main
@@ -88,7 +88,7 @@ jobs:
     if: github.event_name == 'release'
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Download All PDF Artifacts
         uses: actions/download-artifact@v5
