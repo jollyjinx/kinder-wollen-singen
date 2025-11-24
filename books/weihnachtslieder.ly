@@ -30,7 +30,7 @@
 \include "weihnachtslieder/stille_nacht_heilige_nacht_voices.ly" % SNH
 \include "weihnachtslieder/tochter_zion_freue_dich_voices.ly" % TZF
 \include "weihnachtslieder/vom_himmel_hoch_voices.ly" % VHH
-\include "weihnachtslieder/we_wish_you_merry_christmas_voices.ly" % WWY
+\include "weihnachtslieder/we_wish_you_a_merry_christmas_voices.ly" % WWY
 \include "weihnachtslieder/zu_bethlehem_geboren_voices.ly" % ZBG
 
 \book{
