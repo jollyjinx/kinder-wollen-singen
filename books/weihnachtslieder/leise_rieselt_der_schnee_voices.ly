@@ -8,7 +8,7 @@ LRS_maintainerWeb = "http://www.petercrighton.de"
 LRS_copyright = "Public Domain"
 
 LRS_akkorde = \chordmode {
-  f4. c f2. bes f c4. c:7 d2.:m g4.:m c f2.
+  f4. c f2. bes f c4. cis:dim7 d:m (d/fis) g4.:m c f2.
 }
 LRS_melodie = \relative c' {
   \clef "treble"
