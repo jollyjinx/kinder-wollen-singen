@@ -25,6 +25,9 @@ AJW_XaTextStropheEins = \lyricmode {
 AJW_XaMelodie = \relative c'' {
   a4. b8 a4 g | fis2 e | d4 e8( fis) g4 fis | e2. r4 | fis4 a b a | d2 cis4( b) | a g8( fis) g4 a | fis2. r4 \bar "|."
 }
+AJW_XaChords = \chordmode {
+  d1 d2 a2 b:m g a1 d g d2 a:7 d1
+}
 
 AJW_XaGesang =
 \new ChoirStaff {
@@ -76,6 +79,7 @@ AJW_XaStrophen =
 }
 AJW_Xa = \score {
   <<
+    \new ChordNames {\AJW_XaChords}
     \AJW_XaGesang
   >>
   \layout{}

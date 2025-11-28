@@ -9,7 +9,7 @@ FWU_copyright = "Public Domain"
 FWU_Score = <<
   \chords {
     \set chordChanges = ##t
-    g1 d2 g g1 d2 g d1 g d2 g2 g2 d2 g1 d2 g g1 d2 g d1 g c d d g g2 d2 g1
+    g1 d2 g g1 d2 g d1 g d2 g2 g2 d2 g1 d2 g g1 d2 g d1 g2 e:7/gis a1:m d2:7 d:7/fis d1 g1 g2 d g1
   }
   \relative c' {
     \key g \major
