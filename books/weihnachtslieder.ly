@@ -88,10 +88,10 @@
       \fill-line{
         \null
         \with-url
-        "https://ranacrocando.github.io/kinder-wollen-singen/"
+        "https://www.kinder-wollen-singen.de/"
         {
           \fontsize #1
-          "ranacrocando.github.io/kinder-wollen-singen"
+          "www.kinder-wollen-singen.de"
         }\null
       }
     }
