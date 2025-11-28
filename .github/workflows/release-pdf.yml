@@ -76,7 +76,7 @@ jobs:
           DIR_NAME=$(basename "${{ matrix.directory }}")
           echo "DIR_NAME=${DIR_NAME}" >> $GITHUB_ENV
       - name: Upload PDF Artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: "${{ env.DIR_NAME }} Scores"
           path: ${{matrix.directory}}/*.pdf
